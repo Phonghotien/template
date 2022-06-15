@@ -1,0 +1,193 @@
+.faq {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 0;
+
+  &__container {
+    @include mid-flex();
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    width: calc(100% + 3rem);
+    margin-left: -1.5rem;
+
+    @media (max-width: 739px) {
+      flex-direction: column;
+      -webkit-flex-direction: column;
+    }
+
+    &.c-flex {
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      align-items: center;
+      -webkit-align-items: center;
+
+      & .mona__title {
+        width: 100%;
+
+        & .faq__tt {
+          max-width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    &>.mona__title {
+      width: calc(100% * (4 / 12));
+      padding: 0 1.5rem;
+
+      @media (max-width: 739px) {
+        width: 100%;
+        padding: 1.5rem;
+      }
+
+      &>.faq__tt {
+        margin-bottom: 3.3rem;
+        width: 100%;
+        max-width: 26rem;
+
+        @media (max-width: 739px) {
+          max-width: unset;
+        }
+      }
+
+      &>.faq__desc {
+        color: rgba(60, 60, 60, 0.8);
+      }
+    }
+
+    &>.faq__content {
+      width: calc(100% * (8 / 12));
+      padding: 0 1.5rem;
+      position: relative;
+
+      @media (max-width: 739px) {
+        width: 100%;
+        padding: 1.5rem;
+      }
+
+      &>.faq__list {
+        background: #f8f8f8;
+        padding: 1.75rem 3rem 4rem;
+
+        &>.faq__item {
+          padding: 2.25rem 0;
+          border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+
+          &:last-child {
+            padding-bottom: 0;
+            border-bottom: unset;
+          }
+
+          .faq__q {
+            display: flex;
+            align-items: center;
+            transition: 0.3s;
+
+            &:hover {
+              @media(min-width: 1201px) {
+                & .q__tt {
+                  color: $c-secondary;
+                }
+              }
+            }
+
+            &.active {
+              margin-bottom: 0.8rem;
+
+              & .q__tt {
+                color: $c-secondary;
+              }
+            }
+
+            &>.q__q {
+              margin-right: 2.6rem;
+              font-family: "Oswald", sans-serif;
+              @include fz-24;
+              font-weight: bold;
+              line-height: calc(30 / 24);
+              color: $c-secondary;
+            }
+
+            &>.q__tt {
+              @include fz-20;
+              font-weight: bold;
+              line-height: calc(30 / 20);
+              color: #3c3c3c;
+              transition: 0.3s;
+            }
+          }
+
+          .faq__a {
+            display: flex;
+            align-items: flex-start;
+
+            &>.a__a {
+              margin-right: 2.6rem;
+              font-family: "Oswald", sans-serif;
+              @include fz-24;
+              font-weight: bold;
+              line-height: calc(30 / 24);
+              color: rgba(60, 60, 60, 0.8);
+            }
+
+            &>.a__content {
+              @include fz-18;
+              line-height: calc(28 / 18);
+              color: rgba(60, 60, 60, 0.8);
+            }
+          }
+        }
+      }
+
+      &>.faq__content_cubes {
+        position: absolute;
+        z-index: -5;
+        transform: rotate(45deg);
+
+        &.cubes__222 {
+          width: 22.2rem;
+          height: 22.2rem;
+          background: rgba(0, 134, 218, 0.1);
+          top: -3rem;
+          right: -16.7rem;
+        }
+
+        &.cubes__80 {
+          width: 8rem;
+          height: 8rem;
+          background: rgba(229, 243, 251, 1);
+          bottom: -3rem;
+          left: -4rem;
+        }
+      }
+    }
+  }
+
+  &__cubes {
+    position: absolute;
+    z-index: -5;
+    transform: rotate(45deg);
+
+    @media (max-width: 1200px) {
+      opacity: 0.2;
+    }
+
+    &.cubes__374 {
+      width: 37.4rem;
+      height: 37.4rem;
+      background: $c-primary;
+      bottom: 0;
+      left: -18.7rem;
+    }
+
+    &.cubes__74 {
+      width: 7.4rem;
+      height: 7.4rem;
+      background: $c-secondary;
+      bottom: 27rem;
+      left: 22.97rem;
+    }
+  }
+}

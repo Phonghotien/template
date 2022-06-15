@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1564" data-name="Rectangle 1564" width="36" height="36" transform="translate(1364 11173)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_322" data-name="Mask Group 322" transform="translate(-1364 -11173)" clip-path="url(#clip-path)">
+    <g id="Layer_2" data-name="Layer 2" transform="translate(1364 11173)">
+      <g id="_10.linkedin" data-name="10.linkedin">
+        <circle id="background" cx="18" cy="18" r="18" fill="#0b69c7"/>
+        <g id="icon" transform="translate(9.057 9)">
+          <path id="Path_12924" data-name="Path 12924" d="M13.722,11.206A2.458,2.458,0,1,1,11.266,8.75,2.458,2.458,0,0,1,13.722,11.206Z" transform="translate(-8.805 -8.75)" fill="#fff"/>
+          <rect id="Rectangle_1563" data-name="Rectangle 1563" width="3.804" height="12.062" rx="0.592" transform="translate(0.559 5.938)" fill="#fff"/>
+          <path id="Path_12925" data-name="Path 12925" d="M26.52,20.78v5.251a.559.559,0,0,1-.559.559H23.186a.559.559,0,0,1-.559-.559V20.944c0-.76.22-3.316-1.985-3.316-1.71,0-2.058,1.757-2.132,2.546v5.869a.559.559,0,0,1-.554.547H15.27a.557.557,0,0,1-.559-.559V15.089a.559.559,0,0,1,.559-.561h2.686a.561.561,0,0,1,.571.561v.947A3.82,3.82,0,0,1,22.11,14.35C26.547,14.348,26.52,18.5,26.52,20.78Z" transform="translate(-8.637 -8.59)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

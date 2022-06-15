@@ -1,0 +1,112 @@
+.search {
+  &.active {
+    .search {
+      &__icon {
+        background-color: $c-blu-light;
+      }
+      &__bg {
+        opacity: 0.5;
+      }
+      &__inp {
+        padding: 1.5rem;
+        width: calc(100% - 5rem);
+      }
+    }
+    .form {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+  &__bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+    z-index: 11;
+    transition: 0.3s ease;
+  }
+  .form {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 768px;
+    padding: 0 1.5rem;
+    z-index: 12;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s linear;
+  }
+  &__inp {
+    padding: 1.5rem 0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+    &:focus {
+      color: $c-blu-dark;
+    }
+  }
+  &__sel {
+    padding: 1.5rem;
+    padding-right: 3rem;
+    display: block;
+    width: 15rem;
+    background-color: #fff;
+    background-image: url('../assets/images/svg/ser1.svg');
+    background-size: 10px 10px;
+    background-position: 92% 50%;
+    background-repeat: no-repeat;
+  }
+  &__btn {
+    width: 5rem;
+    background-color: $c-blu-light;
+    background-image: url('../assets/images/svg/ser1.svg');
+    background-size: 16px 16px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    transition: 0.3s linear;
+    &:hover {
+      @media only screen and(min-width: 901px) {
+        background-color: $c-blu-dark;
+      }
+    }
+  }
+  &__icon {
+    width: 9rem;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s linear;
+    user-select: none;
+    img {
+      width: 16px;
+      height: 16px;
+    }
+    &:hover {
+      @media only screen and(min-width: 901px) {
+        background-color: $c-blu-light;
+      }
+    }
+  }
+}
+@media only screen and(max-width:1024px) {
+  .search {
+    &__icon {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+}

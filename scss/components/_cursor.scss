@@ -1,0 +1,86 @@
+* {
+  cursor: none !important;
+}
+.cursor {
+  pointer-events: none;
+  position: fixed;
+
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: $c-secondary;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  z-index: 2000;
+  transition: opacity 0.2s ease;
+  &.click {
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    background-image: url('../assets/images/pointer.svg');
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.curshape {
+  width: 2.2rem;
+  height: 100%;
+  border: 1px solid $c-secondary;
+  position: absolute;
+  top: 50%;
+  &__container {
+    pointer-events: none;
+    z-index: 2000;
+    position: fixed;
+    width: 4.4rem;
+    height: 4.4rem;
+
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transition: 0.2s ease;
+  }
+
+  &.left {
+    transform: translate3d(0, -50%, 0);
+    border-right: 1px solid transparent;
+    left: 0;
+  }
+  &.right {
+    right: 0;
+    border-left: 1px solid transparent;
+    transform: translate3d(0, -50%, 0);
+  }
+}
+.curVid {
+  pointer-events: auto;
+}
+.curBoard {
+  pointer-events: none;
+}
+.curLink {
+  &.active {
+    background-color: $c-blu-dark;
+    &:after {
+      width: 12rem;
+      height: 12rem;
+      border-color: $c-blu-dark;
+    }
+    .dia__link__txt {
+      transform: translate(-50%, -50%) rotate(405deg);
+      color: $c-blu-dark;
+      opacity: 0;
+      .letter {
+        padding-top: 7rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  * {
+    cursor: auto !important;
+  }
+  .cursor,
+  .curshape {
+    display: none;
+  }
+}

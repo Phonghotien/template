@@ -1,0 +1,92 @@
+.text {
+    &-relative {
+        position: relative;
+    }
+
+    &-tag {
+        position: relative;
+        padding-left: 3rem;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 2rem;
+            height: 2rem;
+            background: $c-secondary;
+            left: 0;
+            top: 0.2rem;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+    }
+
+    &-mgbt-7 {
+        margin-bottom: 0.7rem;
+    }
+
+    &-mgbt-20 {
+        margin-bottom: 1.5rem;
+    }
+
+    &-f16 {
+        @include fz-16
+    }
+
+    &-f18 {
+        @include fz-18
+    }
+
+    &-fwbold {
+        font-weight: bold;
+    }
+
+    &-fw700 {
+        font-weight: 700;
+    }
+
+    &-underline {
+        text-decoration: underline;
+    }
+
+    &-center {
+        text-align: center;
+    }
+
+    &-bg-f8f8f8 {
+        background: #f8f8f8;
+        width: auto;
+    }
+
+    &-hover {
+        transition: all 0.5s;
+
+        &:hover {
+            color: $c-secondary;
+        }
+    }
+
+    &-hover-2 {
+        transition: all 0.5s;
+
+        &:hover {
+            color: $c-blu-dark;
+        }
+    }
+
+    &-pd-5 {
+
+        display: block;
+
+        @media (min-width: 768px) {
+            padding-top: 5px;
+        }
+
+    }
+}
+
+.text_initialization {
+    padding-top: 4.5rem;
+
+    // @media (max-width: 1200px) {
+    //     padding-top: 3rem;
+    // }
+}

@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+
+    <link rel="icon" type="image/png" href="./assets/images/favicon/fav.png" />
+    <!-- <link rel="stylesheet" href="./css/style.min.css" /> -->
+    <link rel="stylesheet" href="./css/backdoor.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Mẫu Website</title>
+  </head>
+
+  <body>
+    <!-- <div class="preload">
+      <div class="preload__container">
+        <span class="preload__txt">M</span><span class="preload__txt">o</span><span class="preload__txt">n</span><span class="preload__txt">a</span>
+        <span class="preload__txt"> </span><span class="preload__txt">M</span><span class="preload__txt">e</span><span class="preload__txt">d</span
+        ><span class="preload__txt">i</span><span class="preload__txt">a</span>
+      </div>
+    </div> -->
+
+    <div class="curDiamond cursor"></div>
+    <div class="curshape__container curShape">
+      <div class="curshape left"></div>
+      <div class="curshape right"></div>
+    </div>
+
+    <header class="header hdSmall">
+      <div class="header__container">
+        <div class="header__logo">
+          <a class="header__logo__img" href="#">
+            <img src="./assets/images/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="header__left">
+          <div class="menu menuBoard">
+            <ul class="menu__list">
+              <li class="menu-item">
+                <a title="" href="#" class="curItem">Giới thiệu</a>
+              </li>
+              <li class="menu-item">
+                <a title="" href="#" class="curItem">Dự án</a>
+              </li>
+              <li class="menu-item">
+                <a title="" href="#" class="curItem">Khách hàng</a>
+              </li>
+              <li class="menu-item dropdown">
+                <a title="" href="#" class="curItem">
+                  Dịch vụ
+                  <p class="btnDrop">+</p>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="#" class="curItem"> Lập trình IOS Android </a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#" class="curItem"> Marketing </a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#" class="curItem"> Outsourcing </a>
+                  </li>
+                  <li class="submenu-item current">
+                    <a href="#" class="curItem"> VR tour 360 </a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#" class="curItem">
+                      Thiết kế website theo yêu cầu
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item dropdown">
+                <a title="" href="#" class="curItem">
+                  Blogs
+                  <p class="btnDrop">+</p>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="#" class="curItem"> Blog </a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#" class="curItem"> Digital marketing </a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#" class="curItem"> Khởi tạo webiste </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a title="" href="#" class="curItem">Tuyển dụng</a>
+              </li>
+              <li class="menu-item">
+                <a title="" href="#" class="curItem">Liên hệ</a>
+              </li>
+              <div class="menu__form">
+                <div class="menu__form__title">Liên hệ tư vấn</div>
+                <form class="form" action="">
+                  <div class="form__wrap">
+                    <div class="form__item">
+                      <input
+                        type="text"
+                        class="rs__form form__inp formInp curInp"
+                        value="Nguyễn Tuấn Anh"
+                        placeholder="Họ và tên"
+                      />
+                      <label class="form__lab">Họ và tên</label>
+                    </div>
+                    <div class="form__item">
+                      <input
+                        type="text"
+                        class="rs__form form__inp formInp curInp"
+                        placeholder="Số điện thoại"
+                      />
+                      <label class="form__lab">Số điện thoại</label>
+                    </div>
+                    <div class="form__item">
+                      <input
+                        type="text"
+                        class="rs__form form__inp formInp curInp"
+                        placeholder="Nhập Email"
+                      />
+                      <label class="form__lab">Nhập Email</label>
+                    </div>
+                    <div class="form__item">
+                      <textarea
+                        class="form__text rs__form formInp curInp"
+                        placeholder="Nội dung yêu cầu"
+                      ></textarea>
+                      <label class="form__lab">Nội dung yêu cầu</label>
+                    </div>
+                    <div class="form__item">
+                      <button
+                        type="submit"
+                        class="form__btn button rs__form curItem"
+                      >
+                        Gửi yêu cầu
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </ul>
+            <div class="menu__bg menuBg"></div>
+          </div>
+          <div class="header__search">
+            <div class="search actPanel">
+              <span class="search__icon actBtn curItem"
+                ><img src="./assets/images/svg/ser1.svg" alt=""
+              /></span>
+              <div class="search__bg"></div>
+              <form class="form" action="">
+                <input
+                  class="rs__form search__inp curInp"
+                  type="text"
+                  placeholder="Tìm kiếm..."
+                />
+
+                <input
+                  type="submit"
+                  class="rs__form search__btn curItem"
+                  value=" "
+                />
+              </form>
+            </div>
+          </div>
+
+          <div class="menu__btn menuBtn">
+            <svg class="menu__svg" viewBox="0 0 100 100">
+              <path
+                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+              ></path>
+              <path d="m 30,50 h 40"></path>
+              <path
+                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+              ></path>
+            </svg>
+          </div>
+          <div class="header__btn__wrap">
+            <a href="#" class="button curItem">Đặt hàng</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="template-ban banner-custom">
+        <div class="container">
+            <div class="template-ban-tt">
+                <h1 class="txt-title">
+                    <span class="title">2000+ MẪU WEBSITE CỰC ĐẸP</span>
+
+                    <div class="sub-title">
+                        <ul id="typed-strings" class="sub-title-list">
+                            <li class="sub-title-item">
+                                Giới thiệu doanh nghiệp
+                            </li>
+                            <li class="sub-title-item">
+                                Bán hàng
+                            </li>
+                            <li class="sub-title-item">
+                                Du lịch
+                            </li>
+                            <li class="sub-title-item">
+                                Bất động sản
+                            </li>
+                            <li class="sub-title-item">
+                                Giáo dục
+                            </li>
+                            <li class="sub-title-item">
+                                Landing page
+                            </li>
+                        </ul>
+    
+                        <div id="typed" class="sub-title"></div>
+                    </div>
+                </h1>
+            </div>
+            <div class="template-ban-desc pro-ban-sub">
+                <p>
+                    Bạn có thể sử dụng ngay cho thương hiệu của bạn để kinh doanh / bán hàng / giới thiệu
+                </p>
+            </div>
+            <div class="template-ban-btn">
+                <a href="#" class="button curItem">Nhận tư vấn</a>
+                <a href="#" class="button curItem">Gọi ngay</a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <img src="./assets/images/svg/icon-calender.svg" alt="">
+                    7 ngày làm việc
+                </li>
+                <li class="list-inline-item">
+                    <img src="./assets/images/svg/icon-calender.svg" alt="">
+                    7 ngày làm việc
+                </li>
+                <li class="list-inline-item">
+                    <img src="./assets/images/svg/icon-calender.svg" alt="">
+                    7 ngày làm việc
+                </li>
+            </ul>
+        </div>
+        <div class="template-ban-bg" style="background-image: url('./assets/images/template-ban.png');"></div>
+      </div>
+
+      <section class="section template-top">
+          <div class="container">
+              <h2 class="template-top-tt section__title-40">
+                <p>Chúng tôi đã dành 5 năm để nghiên cứu và phát triển <br>
+                    <span class="txt-upper">ĐẦY ĐỦ CÁC LOẠI WEBSITE CHO MỌI NGÀNH NGHỀ</span>
+                </p>
+              </h2>
+              <div class="template-top-desc">
+                  <img src="./assets/images/top-1.png" alt="">
+                  <p class="desc">CÔNG TY SỞ HỮU SỐ LƯỢNG DỰ ÁN WEBSITE LỚN NHẤT VIỆT NAM</p>
+                  <p class="template-total">2000+ MẪU VÀ 5.986 DỰ ÁN WEB THÀNH CÔNG</p>
+              </div>
+
+              <div class="template-top-list">
+                  <div class="template-top-item">
+                      <div class="template-top-wrap">
+                          <div class="icon">
+                              <img src="./assets/images/svg/icon-money.svg" alt="">
+                          </div>
+                          <h4 class="name">7 ngày làm việc</h4>
+                          <p>Sở hữu source web của riêng bạn</p>
+                      </div>
+                  </div>
+                  <div class="template-top-item">
+                    <div class="template-top-wrap">
+                        <div class="icon">
+                            <img src="./assets/images/svg/icon-money.svg" alt="">
+                        </div>
+                        <h4 class="name">Chỉ 7.000.000đ</h4>
+                        <p>Sở hữu source web của riêng bạn</p>
+                    </div>
+                </div>
+                <div class="template-top-item">
+                  <div class="template-top-wrap">
+                      <div class="icon">
+                          <img src="./assets/images/svg/icon-money.svg" alt="">
+                      </div>
+                      <h4 class="name">Hỗ trợ trọn đời</h4>
+                      <p>Sở hữu source web của riêng bạn</p>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="doitac scrollPos template-partner">
+        <div class="container">
+          <h2 class="doitac__title curItem template-partner-tt" no-click="true">
+            <span class="title__ani__wrap">
+              <span class="title__ani">SỞ HỮU WEBSITE CỦA RIÊNG BẠN</span>
+              <span class="title__ani bold">TRẢ 1 LẦN DÙNG MÃI MÃI</span>
+            </span>
+          </h2>
+          <div class="template-partner-desc">
+              <p>
+                  <span class="bold">Đây không phải là dạng thức thuê website,</span>
+                  bạn sẽ không phải lo lắng website bị mất, bị chặn, bị giới hạn khả năng vận hành 
+              </p>
+              <p>
+                Source Code - Hình ảnh - Content trên web đều thuộc quyền sở hữu của bạn 100% -
+                <span class="bold"> Bạn chỉ cần chi trả 1 lần duy nhất với chi phí hợp lý</span>
+            </p>
+          </div>
+          <div class="text__ani">
+            <div class="doitac__subtitle">
+                <span class="bold">2000+</span> KHÁCH HÀNG ĐÃ SỬ DỤNG MẪU WEB TẠI <span class="bold">MONA</span>
+            </div>
+          </div>
+          <div
+            class="swiper-row arr wow animate__fadeInUp"
+            data-wow-delay="0.6s"
+          >
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="doitac__logo curItem">
+                    <a class="doitac__logo__link" href="#">
+                      <img src="./assets/images/dt1.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doitac__logo curItem">
+                    <a class="doitac__logo__link" href="#">
+                      <img src="./assets/images/dt2.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doitac__logo curItem">
+                    <a class="doitac__logo__link" href="#">
+                      <img src="./assets/images/dt3.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doitac__logo curItem">
+                    <a class="doitac__logo__link" href="#">
+                      <img src="./assets/images/dt4.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doitac__logo curItem">
+                    <a class="doitac__logo__link" href="#">
+                      <img src="./assets/images/dt5.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doitac__logo curItem">
+                    <a class="doitac__logo__link" href="#">
+                      <img src="./assets/images/dt5.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doitac__logo curItem">
+                    <a class="doitac__logo__link" href="#">
+                      <img src="./assets/images/dt4.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doitac__logo curItem">
+                    <a class="doitac__logo__link" href="#">
+                      <img src="./assets/images/dt3.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doitac__logo curItem">
+                    <a class="doitac__logo__link" href="#">
+                      <img src="./assets/images/dt2.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doitac__logo curItem">
+                    <a class="doitac__logo__link" href="#">
+                      <img src="./assets/images/dt1.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doitac__logo curItem">
+                    <a class="doitac__logo__link" href="#">
+                      <img src="./assets/images/dt3.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="doitac__logo curItem">
+                    <a class="doitac__logo__link" href="#">
+                      <img src="./assets/images/dt3.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev curItemSqr"></div>
+            <div class="swiper-button-next curItemSqr"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="dia__22">
+          <div class="doitac__sqr"></div>
+        </div>
+      </section>
+
+      <section class="advisory">
+          <div class="container">
+              <div class="box-tuvan wow animate__fadeInUp">
+                <div class="img-item">
+                  <img src="assets/images/laptop-tuvan.png" alt="" />
+                </div>
+                <div class="wrapper-content">
+                  <p class="txt-title">Thiết kế website chuẩn SEO - giá rẻ</p>
+                  <p class="txt-desc">
+                    Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc
+                    trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử
+                    dụng như một văn bản chuẩn cho ngành công nghiệp
+                  </p>
+                  <div class="advisory-btn">
+                      <a href="#" class="btn btn-second current curItem">Nhận tư vấn</a>
+                      <a href="#" class="btn btn-second current curItem">Chọn mẫu</a>
+                  </div>
+                </div>
+                <div class="bg-item">
+                  <img src="assets/images/bg-tuvan.png" alt="" />
+                </div>
+                <div class="item-square-left"></div>
+                <div class="item-square-right"></div>
+              </div>
+          </div>
+      </section>
+
+      <section class="template-about">
+        <div class="template-about-list">
+          <div class="template-about-item">
+            <div class="container">
+              <div class="template-about-wrap">
+                <div class="template-about-content">
+                  <div class="content">
+                    <h2 class="section__title-40">
+                      WEBSITE CHUẨN <br> DI ĐỘNG - RESPONSIVE
+                    </h2>
+                    <div class="template-about-desc txt">
+                      <p>Chuẩn SEO là yếu tố ưu tiên hàng đầu khi website được xây dựng tại Mona Media. Vì một website phải có dủ khả năng để tiếp cận khách hàng của bạn
+                        Không chỉ chuẩn các yếu tố SEO, mà còn tích hợp đầy đủ công cụ để thực hiện công việc SEO</p>
+                    </div>
+                    <ul class="template-about-attr">
+                      <li class="attr-item diamon-point">
+                        Đa thiết bị: mobile, tablet, desktop
+                      </li>
+                      <li class="attr-item diamon-point">
+                        Đa trình duyệt
+                      </li>
+                      <li class="attr-item diamon-point">
+                        Hiển thị đẹp trên mọi tỉ lệ màn hình
+                      </li>
+                      <li class="attr-item diamon-point">
+                        Đa trình duyệt
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="template-about-img">
+                  <div class="img">
+                    <img src="./assets/images/device-responsive.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="template-about-item">
+            <div class="container">
+              <div class="template-about-wrap">
+                <div class="template-about-content">
+                  <div class="content">
+                    <h2 class="section__title-40">
+                      WEBSITE CHUẨN SEO - <br> HỖ TRỢ SEO
+                    </h2>
+                    <div class="template-about-desc txt">
+                      <p>Chuẩn SEO là yếu tố ưu tiên hàng đầu khi website được xây dựng tại Mona Media. Vì một website phải có dủ khả năng để tiếp cận khách hàng của bạn
+                        Không chỉ chuẩn các yếu tố SEO, mà còn tích hợp đầy đủ công cụ để thực hiện công việc SEO</p>
+                    </div>
+                    <ul class="template-about-attr">
+                      <li class="attr-item diamon-point">
+                        Thẻ Meta
+                      </li>
+                      <li class="attr-item diamon-point">
+                        Đa trình duyệt
+                      </li>
+                      <li class="attr-item diamon-point">
+                        Hiển thị đẹp trên mọi tỉ lệ màn hình
+                      </li>
+                      <li class="attr-item diamon-point">
+                        Yoast SEO
+                      </li>
+                      <li class="attr-item diamon-point">
+                        Rank Math
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="template-about-img">
+                  <div class="img">
+                    <img src="./assets/images/device-responsive.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="template-about-item">
+            <div class="container">
+              <div class="template-about-wrap">
+                <div class="template-about-content">
+                  <div class="content">
+                    <h2 class="section__title-40">
+                      KHẢ NĂNG PHÁT TRIỂN KHÔNG GIỚI HẠN
+                    </h2>
+                    <div class="template-about-desc txt">
+                      <p>Website có khả năng phát triển mọi thứ theo yêu cầu của bạn.
+                        Bạn có thể tích hợp để xây dựng Web App quản lý</p>
+                    </div>
+                    <ul class="template-about-attr">
+                      <li class="attr-item diamon-point">
+                        Tích hợp API, quản lý với Web App
+                      </li>
+                      <li class="attr-item diamon-point">
+                        Tích hợp công cụ tracking Marketing (Analytics)
+                      </li>
+                      <li class="attr-item diamon-point">
+                        Cài đặt công cụ Livechat
+                      </li>
+                      <li class="attr-item diamon-point">
+                        Website
+                      </li>
+                      <li class="attr-item diamon-point">
+                        Cài đặt công cụ Livechat
+                      </li>
+                      <li class="attr-item diamon-point">
+                        Website
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="template-about-img">
+                  <div class="img">
+                    <img src="./assets/images/device-responsive.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="template-use section-80">
+        <div class="container">
+          <div class="template-use-tt">
+            <h2 class="section__title-40">
+              SỬ DỤNG, QUẢN LÝ WEBSITE ĐƠN GIẢN
+            </h2>
+          </div>
+
+          <div class="template-use-desc">
+            <p class="txt">Mọi thứ đã được xây dựng sẵn cho bạn để khởi tạo website và quản trị dễ dàng</p>
+          </div>
+
+          <div class="template-use-list">
+            <div class="template-use-item">
+              <div class="template-use-wrap">
+                <div class="img">
+                  <img src="./assets/images/c-blog-recent-img-3.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h4 class="name">KHẢ NĂNG TÙY BIẾN</h4>
+                  <p class="desc">Dễ dàng thay Logo / Màu sắc / Hình ảnh như mong muốn</p>
+                </div>
+              </div>
+            </div>
+            <div class="template-use-item">
+              <div class="template-use-wrap">
+                <div class="img">
+                  <img src="./assets/images/c-blog-recent-img-3.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h4 class="name">CMS Wordpress</h4>
+                  <p class="desc">CMS Wordpress sử dụng đơn giản, dễ dàng với bất cứ ai, nhiều tiện ích đi kèm</p>
+                </div>
+              </div>
+            </div>
+            <div class="template-use-item">
+              <div class="template-use-wrap">
+                <div class="img">
+                  <img src="./assets/images/c-blog-recent-img-3.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h4 class="name">SỬ DỤNG DỄ DÀNG</h4>
+                  <p class="desc">Đăng tải hình ảnh sản phẩm / dịch vụ và doanh nghiệp nhanh chóng</p>
+                </div>
+              </div>
+            </div>
+            <div class="template-use-item">
+              <div class="template-use-wrap">
+                <div class="img">
+                  <img src="./assets/images/c-blog-recent-img-3.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h4 class="name">HỖ TRỢ TẬN TÂM</h4>
+                  <p class="desc">Đội ngũ chuyên viên hỗ trợ 24/7 và song hành với bạn bất cứ khi nào bạn cần</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="template-use-bonus">
+            <h4 class="title">ĐẶC BIỆT TẶNG KÈM</h4>
+            <div class="bonus-list">
+              <div class="bonus-item">
+                <h5 class="bonus-wrap">
+                  BỘ VIDEO NGHIỆP VỤ <br>
+                  QUẢN TRỊ WEBSITE CHI TIẾT
+                </h5>
+              </div>
+              <div class="bonus-item">
+                <h5 class="bonus-wrap">
+                  BỘ NGHIỆP VỤ <br>
+                  TỐI ƯU BÀI VIẾT CHUẨN SEO
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="template-services section-80">
+        <div class="container">
+          <div class="template-services-tt">
+            <h2 class="section__title-40">
+              DỊCH VỤ ĐI KÈM MẪU WEBSITE
+            </h2>
+          </div>
+
+          <div class="template-services-list">
+            <div class="template-services-item">
+              <div class="template-services-wrap">
+                <div class="img">
+                  <img src="./assets/images/mkt-ux.png" alt="">
+                  <img src="./assets/images/mkt-ux2.png" alt="">
+                </div>
+                <h4 class="name">Thiết kế Website chuẩn SEO</h4>
+                <p class="desc">
+                  Một website chuẩn SEO là tiêu chí cơ bản để thực hiện Marketing
+                </p>
+                <a href="#" class="button">Xem chi tiết</a>
+                <div class="item-sticky"></div>
+              </div>
+            </div>
+            <div class="template-services-item">
+              <div class="template-services-wrap">
+                <div class="img">
+                  <img src="./assets/images/mkt-note.png" alt="">
+                  <img src="./assets/images/mkt-note2.png" alt="">
+                </div>
+                <h4 class="name">Dịch vụ viết bài chuẩn SEO</h4>
+                <p class="desc">
+                  Một dịch vụ tuyệt vời tối ưu nhân sự và thời gian
+                </p>
+                <a href="#" class="button">Xem chi tiết</a>
+                <div class="item-sticky"></div>
+              </div>
+            </div>
+            <div class="template-services-item">
+              <div class="template-services-wrap">
+                <div class="img">
+                  <img src="./assets/images/mkt-seo.png" alt="">
+                  <img src="./assets/images/mkt-seo2.png" alt="">
+                </div>
+                <h4 class="name">Dịch vụ SEO</h4>
+                <p class="desc">
+                  Không chỉ SEO, đây còn là chìa khoá  kế hoạch marketing thành công
+                </p>
+                <a href="#" class="button">Xem chi tiết</a>
+                <div class="item-sticky"></div>
+              </div>
+            </div>
+            <div class="template-services-item">
+              <div class="template-services-wrap">
+                <div class="img">
+                  <img src="./assets/images/mkt-ads.png" alt="">
+                  <img src="./assets/images/mkt-ads2.png" alt="">
+                </div>
+                <h4 class="name">Dịch vụ Google Ads</h4>
+                <p class="desc">
+                  Một website chuẩn SEO là tiêu chí cơ bản để thực hiện Marketing
+                </p>
+                <a href="#" class="button">Xem chi tiết</a>
+                <div class="item-sticky"></div>
+              </div>
+            </div>
+            <div class="template-services-item">
+              <div class="template-services-wrap">
+                <div class="img">
+                  <img src="./assets/images/mkt-notice.png" alt="">
+                  <img src="./assets/images/mkt-notice2.png" alt="">
+                </div>
+                <h4 class="name">Dịch vụ Facebook Ads</h4>
+                <p class="desc">
+                  Một website chuẩn SEO là tiêu chí cơ bản để thực hiện Marketing
+                </p>
+                <a href="#" class="button">Xem chi tiết</a>
+                <div class="item-sticky"></div>
+              </div>
+            </div>
+            <div class="template-services-item">
+              <div class="template-services-wrap">
+                <div class="img">
+                  <img src="./assets/images/mkt-email.png" alt="">
+                  <img src="./assets/images/mkt-emaiil2.png" alt="">
+                </div>
+                <h4 class="name">Dịch vụ Email Marketing</h4>
+                <p class="desc">
+                  Giúp khách hàng tìm đến bạn hiệu quả hơn
+                </p>
+                <a href="#" class="button">Xem chi tiết</a>
+                <div class="item-sticky"></div>
+              </div>
+            </div>
+            <div class="template-services-item">
+              <div class="template-services-wrap">
+                <div class="img">
+                  <img src="./assets/images/mkt-code.png" alt="">
+                  <img src="./assets/images/mkt-code2.png" alt="">
+                </div>
+                <h4 class="name">Thiết kế - Lập trình landing page, sale page</h4>
+                <p class="desc">
+                  Giúp khách hàng tìm đến bạn hiệu quả hơn
+                </p>
+                <a href="#" class="button">Xem chi tiết</a>
+                <div class="item-sticky"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="template-list section-80">
+        <div class="container">
+          <div class="template-list-tt">
+            <h2 class="section__title-40">
+              DANH SÁCH MẪU WEBSITE
+            </h2>
+          </div>
+          <div class="template-list-wrap">
+            <div class="aside-filter">
+              <div class="aside-filter-wrap">
+                <div class="aside-filter-tt">Filter Demos</div>
+                <ul class="aside-filter-list">
+                  <li class="aside-filter-item active">
+                    <a href="#">
+                      Show All
+                      <span class="count">9957</span>
+                    </a>
+                  </li>
+                  <li class="aside-filter-item">
+                    <a href="#">
+                      Business
+                      <span class="count">115</span>
+                    </a>
+                  </li>
+                  <li class="aside-filter-item">
+                    <a href="#">
+                      eCommerce
+                      <span class="count">15</span>
+                    </a>
+                  </li>
+                  <li class="aside-filter-item">
+                    <a href="#">
+                      Portfolio
+                      <span class="count">15</span>
+                    </a>
+                  </li>
+                  <li class="aside-filter-item">
+                    <a href="#">
+                      Landing
+                      <span class="count">15</span>
+                    </a>
+                  </li>
+                  <li class="aside-filter-item">
+                    <a href="#">
+                      One-Page
+                      <span class="count">15</span>
+                    </a>
+                  </li>
+                  <li class="aside-filter-item">
+                    <a href="#">
+                      Travel
+                      <span class="count">15</span>
+                    </a>
+                  </li>
+                  <li class="aside-filter-item">
+                    <a href="#">
+                      Events
+                      <span class="count">15</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="template-list-main">
+              <div class="card-list">
+                <div class="card-item">
+                  <div class="card-wrap">
+                    <a href="#" class="img">
+                      <img src="./assets/images/template-list1.png" alt="">
+                    </a>
+                    <div class="info">
+                      <h4 class="name">
+                        <a href="#">
+                          MẪU WEBSITE BÁN MÁY CÔNG NGHIỆP
+                        </a>
+                      </h4>
+                      <div class="price">
+                        <a href="#" class="curItem">
+                          <span class="price-btn">Giá chỉ: 7,000,000 VND</span>
+                          <span class="meta-dim">Xem thêm</span>
+                        </a>
+                      </div>
+                      <div class="tag">
+                        <div class="tag-label">Tag:</div>
+                        <div class="tag-list">
+                          <a href="#" class="tag-item curItem">Bán máy - Thiết bị công nghiệp</a>
+                          <a href="#" class="tag-item curItem">Bán máy cơ khí</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-wrap">
+                    <a href="#" class="img">
+                      <img src="./assets/images/template-list2.png" alt="">
+                    </a>
+                    <div class="info">
+                      <h4 class="name">
+                        <a href="#">
+                          MẪU WEBSITE KINH DOANH ĐỒNG HỒ
+                        </a>
+                      </h4>
+                      <div class="price">
+                        <a href="#" class="curItem">
+                          <span class="price-btn">Giá chỉ: 7,000,000 VND</span>
+                          <span class="meta-dim">Xem thêm</span>
+                        </a>
+                      </div>
+                      <div class="tag">
+                        <div class="tag-label">Tag:</div>
+                        <div class="tag-list">
+                          <a href="#" class="tag-item curItem">Bán đồng hồ</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-wrap">
+                    <a href="#" class="img">
+                      <img src="./assets/images/template-list3.png" alt="">
+                    </a>
+                    <div class="info">
+                      <h4 class="name">
+                        <a href="#">
+                          MẪU WEBSITE DỊCH VỤ STUDIO ÁO CƯỚI – CHO THUÊ ÁO CƯỚI
+                        </a>
+                      </h4>
+                      <div class="price">
+                        <a href="#" class="curItem">
+                          <span class="price-btn">Giá chỉ: 7,000,000 VND</span>
+                          <span class="meta-dim">Xem thêm</span>
+                        </a>
+                      </div>
+                      <div class="tag">
+                        <div class="tag-label">Tag:</div>
+                        <div class="tag-list">
+                          <a href="#" class="tag-item curItem">Bán hoa tươi - hoa khô</a>
+                          <a href="#" class="tag-item curItem">Dịch vụ đám cưới</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-wrap">
+                    <a href="#" class="img">
+                      <img src="./assets/images/template-list4.png" alt="">
+                    </a>
+                    <div class="info">
+                      <h4 class="name">
+                        <a href="#">
+                          MẪU WEBSITE DỊCH VỤ VỆ SINH GIÚP VIỆC NHÀ
+                        </a>
+                      </h4>
+                      <div class="price">
+                        <a href="#" class="curItem">
+                          <span class="price-btn">Giá chỉ: 7,000,000 VND</span>
+                          <span class="meta-dim">Xem thêm</span>
+                        </a>
+                      </div>
+                      <div class="tag">
+                        <div class="tag-label">Tag:</div>
+                        <div class="tag-list">
+                          <a href="#" class="tag-item curItem">Công ty dịch vụ</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-wrap">
+                    <a href="#" class="img">
+                      <img src="./assets/images/template-list1.png" alt="">
+                    </a>
+                    <div class="info">
+                      <h4 class="name">
+                        <a href="#">
+                          MẪU WEBSITE BÁN MÁY CÔNG NGHIỆP
+                        </a>
+                      </h4>
+                      <div class="price">
+                        <a href="#" class="curItem">
+                          <span class="price-btn">Giá chỉ: 7,000,000 VND</span>
+                          <span class="meta-dim">Xem thêm</span>
+                        </a>
+                      </div>
+                      <div class="tag">
+                        <div class="tag-label">Tag:</div>
+                        <div class="tag-list">
+                          <a href="#" class="tag-item curItem">Bán máy - Thiết bị công nghiệp</a>
+                          <a href="#" class="tag-item curItem">Bán máy cơ khí</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-wrap">
+                    <a href="#" class="img">
+                      <img src="./assets/images/template-list2.png" alt="">
+                    </a>
+                    <div class="info">
+                      <h4 class="name">
+                        <a href="#">
+                          MẪU WEBSITE KINH DOANH ĐỒNG HỒ
+                        </a>
+                      </h4>
+                      <div class="price">
+                        <a href="#" class="curItem">
+                          <span class="price-btn">Giá chỉ: 7,000,000 VND</span>
+                          <span class="meta-dim">Xem thêm</span>
+                        </a>
+                      </div>
+                      <div class="tag">
+                        <div class="tag-label">Tag:</div>
+                        <div class="tag-list">
+                          <a href="#" class="tag-item curItem">Bán đồng hồ</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-wrap">
+                    <a href="#" class="img">
+                      <img src="./assets/images/template-list3.png" alt="">
+                    </a>
+                    <div class="info">
+                      <h4 class="name">
+                        <a href="#">
+                          MẪU WEBSITE DỊCH VỤ STUDIO ÁO CƯỚI – CHO THUÊ ÁO CƯỚI
+                        </a>
+                      </h4>
+                      <div class="price">
+                        <a href="#" class="curItem">
+                          <span class="price-btn">Giá chỉ: 7,000,000 VND</span>
+                          <span class="meta-dim">Xem thêm</span>
+                        </a>
+                      </div>
+                      <div class="tag">
+                        <div class="tag-label">Tag:</div>
+                        <div class="tag-list">
+                          <a href="#" class="tag-item curItem">Bán hoa tươi - hoa khô</a>
+                          <a href="#" class="tag-item curItem">Dịch vụ đám cưới</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-wrap">
+                    <a href="#" class="img">
+                      <img src="./assets/images/template-list4.png" alt="">
+                    </a>
+                    <div class="info">
+                      <h4 class="name">
+                        <a href="#">
+                          MẪU WEBSITE DỊCH VỤ VỆ SINH GIÚP VIỆC NHÀ
+                        </a>
+                      </h4>
+                      <div class="price">
+                        <a href="#" class="curItem">
+                          <span class="price-btn">Giá chỉ: 7,000,000 VND</span>
+                          <span class="meta-dim">Xem thêm</span>
+                        </a>
+                      </div>
+                      <div class="tag">
+                        <div class="tag-label">Tag:</div>
+                        <div class="tag-list">
+                          <a href="#" class="tag-item curItem">Công ty dịch vụ</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-wrap">
+                    <a href="#" class="img">
+                      <img src="./assets/images/template-list1.png" alt="">
+                    </a>
+                    <div class="info">
+                      <h4 class="name">
+                        <a href="#">
+                          MẪU WEBSITE BÁN MÁY CÔNG NGHIỆP
+                        </a>
+                      </h4>
+                      <div class="price">
+                        <a href="#" class="curItem">
+                          <span class="price-btn">Giá chỉ: 7,000,000 VND</span>
+                          <span class="meta-dim">Xem thêm</span>
+                        </a>
+                      </div>
+                      <div class="tag">
+                        <div class="tag-label">Tag:</div>
+                        <div class="tag-list">
+                          <a href="#" class="tag-item curItem">Bán máy - Thiết bị công nghiệp</a>
+                          <a href="#" class="tag-item curItem">Bán máy cơ khí</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-wrap">
+                    <a href="#" class="img">
+                      <img src="./assets/images/template-list2.png" alt="">
+                    </a>
+                    <div class="info">
+                      <h4 class="name">
+                        <a href="#">
+                          MẪU WEBSITE KINH DOANH ĐỒNG HỒ
+                        </a>
+                      </h4>
+                      <div class="price">
+                        <a href="#" class="curItem">
+                          <span class="price-btn">Giá chỉ: 7,000,000 VND</span>
+                          <span class="meta-dim">Xem thêm</span>
+                        </a>
+                      </div>
+                      <div class="tag">
+                        <div class="tag-label">Tag:</div>
+                        <div class="tag-list">
+                          <a href="#" class="tag-item curItem">Bán đồng hồ</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-wrap">
+                    <a href="#" class="img">
+                      <img src="./assets/images/template-list3.png" alt="">
+                    </a>
+                    <div class="info">
+                      <h4 class="name">
+                        <a href="#">
+                          MẪU WEBSITE DỊCH VỤ STUDIO ÁO CƯỚI – CHO THUÊ ÁO CƯỚI
+                        </a>
+                      </h4>
+                      <div class="price">
+                        <a href="#" class="curItem">
+                          <span class="price-btn">Giá chỉ: 7,000,000 VND</span>
+                          <span class="meta-dim">Xem thêm</span>
+                        </a>
+                      </div>
+                      <div class="tag">
+                        <div class="tag-label">Tag:</div>
+                        <div class="tag-list">
+                          <a href="#" class="tag-item curItem">Bán hoa tươi - hoa khô</a>
+                          <a href="#" class="tag-item curItem">Dịch vụ đám cưới</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-wrap">
+                    <a href="#" class="img">
+                      <img src="./assets/images/template-list4.png" alt="">
+                    </a>
+                    <div class="info">
+                      <h4 class="name">
+                        <a href="#">
+                          MẪU WEBSITE DỊCH VỤ VỆ SINH GIÚP VIỆC NHÀ
+                        </a>
+                      </h4>
+                      <div class="price">
+                        <a href="#" class="curItem">
+                          <span class="price-btn">Giá chỉ: 7,000,000 VND</span>
+                          <span class="meta-dim">Xem thêm</span>
+                        </a>
+                      </div>
+                      <div class="tag">
+                        <div class="tag-label">Tag:</div>
+                        <div class="tag-list">
+                          <a href="#" class="tag-item curItem">Công ty dịch vụ</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <nav class="pagination wow animate__fadeInUp">
+                <ul>
+                  <li class="page-numbers">
+                    <span>
+                      <i class="fas fa-chevron-left"></i>
+                    </span>
+                  </li>
+                  <li class="page-numbers current">
+                    <span>
+                      <span> 1 </span>
+                    </span>
+                  </li>
+                  <li class="page-numbers">
+                    <a href="#"><span>2</span></a>
+                  </li>
+                  <li class="page-numbers">
+                    <a href="#"><span>3</span></a>
+                  </li>
+                  <li class="page-numbers">
+                    <a href="#">
+                      <span>
+                        <i class="fas fa-chevron-right"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="template-content">
+        <div class="container">
+          <div class="template-content-tt">
+            <h2 class="section__title-40">
+              Phần nhập content
+            </h2>
+          </div>
+          <div class="template-content-desc">
+            <p>
+              Trong thị trường Online, tồn tại một sự thật mà không ai có thể thay đổi, đó là vai trò của Website trong việc tối ưu bất kì chiến lược nào. Bạn có thể làm mọi thứ với website của mình từ thiết kế nó như một bản Brochure chuyên nghiệp đến sử dụng như một phương tiện truyền thông hiệu quả hay là công cụ bán hàng chuyên nghiệp đều được. Thiết kế website trở thành điều không thể thiếu, là xu hướng tất yếu, là vũ khí hủy diệt đối với bất cứ doanh nghiệp hoặc cá nhân muốn phát triển sự nghiệp Online của mình.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="map scrollPos">
+        <div class="map-content">
+          <div class="container">
+            <div class="map-col">
+              <div class="map-col-wrap">
+                <h2 class="service__title curItem" no-click="true">
+                  <span class="title__ani__wrap">
+                    <span class="title__ani"> Liên hệ chúng tôi </span>
+                  </span>
+                </h2>
+
+                <div class="map-info">
+                  <div class="map-item">
+                    <p class="title wow animate__fadeInRight">
+                      <img src="./img/map1.svg" alt="" />
+                      Địa chỉ:
+                    </p>
+                    <div class="wow animate__fadeInRight" data-wow-delay="0.6s">
+                      <p>
+                        <b>Cơ sở 1:</b> 373/226 Lý Thường Kiệt, P8, <br />
+                        Q. Tân Bình, HCM
+                      </p>
+                      <p>
+                        <b> Cơ sở 2:</b> 373/226 Lý Thường Kiệt, P8, <br />
+                        Q. Tân Bình, HCM
+                      </p>
+                    </div>
+                  </div>
+                  <div class="map-item">
+                    <p
+                      class="title wow animate__fadeInRight"
+                      data-wow-delay="0.2s"
+                    >
+                      <img src="./img/map2.svg" alt="" />
+                      Email:
+                    </p>
+                    <div class="wow animate__fadeInRight" data-wow-delay="0.6s">
+                      <a href="#">info@mona-media.com</a>
+                    </div>
+                  </div>
+                  <div class="map-item">
+                    <p
+                      class="title wow animate__fadeInRight"
+                      data-wow-delay="0.4s"
+                    >
+                      <img src="./img/map3.svg" alt="" />
+                      Hotline:
+                    </p>
+                    <div class="wow animate__fadeInRight" data-wow-delay="0.6s">
+                      <a href="#">1900 636 648</a>
+                      <p>Bấm 108 - Phòng kinh doanh</p>
+                      <p>Bấm 109 - Phòng kinh doanh</p>
+                      <p>Bấm 103 - Phòng kỹ thuật</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="map-btn">
+                <div class="curItemSqr">
+                  <div class="scrolldown__btn dia__container">
+                    <div class="dia__content">
+                      <i class="fal fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31349.379796236954!2d106.63027925940864!3d10.83635739185174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed189fa855d%3A0xf63e15bfce46baef!2sC%C3%B4ng%20ty%20TNHH%20-%20MONA%20MEDIA!5e0!3m2!1svi!2s!4v1641461188398!5m2!1svi!2s"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="section contact contact__about scrollPos">
+        <div class="container intro__container">
+          <div class="intro__item">
+            <h2 class="section__title-40 intro__line curItem" no-click="true">
+              <span class="title__ani__wrap">
+                <span class="title__ani"> Liên Hệ Báo Giá </span>
+              </span>
+            </h2>
+            <div class="contact__form">
+              <form class="form" action="">
+                <div class="form__wrap">
+                  <div class="form__item half">
+                    <input
+                      type="text"
+                      class="rs__form form__inp formInp curInp"
+                      value="Nguyễn Tuấn Anh"
+                      placeholder="Họ và tên"
+                    />
+                    <label class="form__lab">Họ và tên</label>
+                  </div>
+                  <div class="form__item half">
+                    <input
+                      type="text"
+                      class="rs__form form__inp formInp curInp"
+                      placeholder="Số điện thoại"
+                    />
+                    <label class="form__lab">Số điện thoại</label>
+                  </div>
+                  <div class="form__item">
+                    <input
+                      type="text"
+                      class="rs__form form__inp formInp curInp"
+                      placeholder="Nhập Email"
+                    />
+                    <label class="form__lab">Nhập Email</label>
+                  </div>
+                  <div class="form__item">
+                    <label class="form__lab form__lab__sel">Chọn dịch vụ</label>
+                    <div class="select2-group curInp">
+                      <select class="rs__form select2-js" name="state" id="">
+                        <option value="1" selected>
+                          Thiết kế website theo yêu cầu
+                        </option>
+                        <option value="2">Thiết kế website theo mẫu</option>
+                        <option value="3">Thiết kế website độc quyền</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__item">
+                    <textarea
+                      class="form__text rs__form formInp curInp"
+                      placeholder="Nội dung yêu cầu"
+                    ></textarea>
+                    <label class="form__lab">Nội dung yêu cầu</label>
+                  </div>
+                  <div class="form__item">
+                    <button
+                      type="submit"
+                      class="form__btn button rs__form curItem"
+                    >
+                      Gửi yêu cầu
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="intro__item">
+            <div class="curBoard intro__vid__wrap">
+              <a
+                href="#"
+                class="dia__link curLink rotate0"
+                deftop="80%"
+                defleft="280px"
+              >
+                <img src="./assets/images/svg/phone.svg" alt="" class="phone" />
+                <div class="dia__link__txt left roundTxt">tư vấn trực tiếp</div>
+              </a>
+              <div class="dia__65 contact__vid">
+                <a href="#" class="dia__container curVid reverse1">
+                  <div class="dia__content">
+                    <img src="./assets/images/contact.jpg" alt="" />
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="back__to__top backToTop curItem">
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="section-70">
+        <div class="container footer__container">
+          <div class="footer__item">
+            <a href="#" class="footer__logo">
+              <img src="./assets/images/logobig.png" alt="" />
+            </a>
+            <div class="footer__txt">
+              Giấy phép kinh doanh: 0313728397 Sở kế hoạch và đầu tư thành phố
+              Hồ Chí Minh
+            </div>
+            <div class="footer__check">
+              <img src="./assets/images/ftc1.png" alt="" />
+              <img class="img2" src="./assets/images/ftc2.png" alt="" />
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__title__wrap">
+              <div class="footer__title">Menu</div>
+            </div>
+            <ul class="footer__list">
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Dịch vụ</a></li>
+              <li><a href="#">Dự án</a></li>
+              <li><a href="#">Mẫu website</a></li>
+              <li><a href="#">Báo chí nói về chúng tôi</a></li>
+              <li><a href="#">Tuyển dụng</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <div class="footer__title__wrap">
+              <div class="footer__title">Liên hệ</div>
+            </div>
+            <ul class="footer__list">
+              <li>
+                <span class="white"> Địa chỉ: </span>
+                373/226 Lý Thường Kiệt, P8, Q. Tân Bình, HCM
+              </li>
+              <li>
+                <span class="white"> Email: </span>
+                <a href="#" class="mailFormat">info@mona-media.com</a>
+              </li>
+            </ul>
+            <div class="footer__title__wrap">
+              <div class="footer__title">Trợ giúp</div>
+            </div>
+            <ul class="footer__list">
+              <li>
+                <a href="#">Trung tâm trợ giúp</a>
+              </li>
+              <li>
+                <a href="#">Hình thức thanh toán</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <div class="footer__title__wrap">
+              <div class="footer__title">Điện thoại</div>
+            </div>
+            <ul class="footer__list">
+              <li><a href="#" class="phoneFormat">1900 636 648</a></li>
+              <li>Bấm 108 - Phòng kinh doanh</li>
+              <li>Bấm 109 - Phòng kinh doanh</li>
+              <li>Bấm 103 - Phòng kỹ thuật</li>
+            </ul>
+          </div>
+          <div class="footer__item big">
+            <div class="footer__title__wrap">
+              <div class="footer__title">Dịch vụ</div>
+            </div>
+            <ul class="footer__list">
+              <li><a href="#">Thiết kế website học trực tuyến</a></li>
+              <li><a href="#">Thiết kế website nhập hàng</a></li>
+              <li><a href="#">Đăng ký website với Bộ Công Thương</a></li>
+              <li><a href="#">Phần mềm quản lý trọ</a></li>
+              <li><a href="#">Thiết kế website khách sạn</a></li>
+              <li><a href="#">Thiết kế website doanh nghiệp</a></li>
+              <li><a href="#">Thiết kế website bán hàng</a></li>
+              <li><a href="#">Thiết kế Landing page</a></li>
+              <li><a href="#">Thiết kế website du lịch</a></li>
+              <li><a href="#">Thiết kế website bất động sản</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <div class="footer__title__wrap">
+              <div class="footer__title">Sản phẩm</div>
+            </div>
+            <ul class="footer__list">
+              <li><a href="#">Hệ thống nhập hàng</a></li>
+              <li><a href="#">PM quản lý LMS</a></li>
+              <li><a href="#">Hệ thống Elearning</a></li>
+              <li><a href="#">PM quản lý nhà trọ</a></li>
+              <li><a href="#">Một sản phẩm trong tương lai</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <div class="footer__title__wrap">
+              <div class="footer__title">Fanpage Facebook</div>
+            </div>
+            <a href="#" class="footer__fb">
+              <img src="./assets/images/ftfb.jpg" alt="" />
+            </a>
+            <div class="footer__title__wrap">
+              <div class="footer__title">Download PM Mona PMS</div>
+            </div>
+            <a href="#" class="footer__btn">
+              <img src="./assets/images/gg.png" alt="" />
+            </a>
+            <a href="#" class="footer__btn">
+              <img src="./assets/images/at.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__bottom__container">
+          <div class="copyright">
+            Designed by
+            <a title="" href="https://mona.media">
+              <img
+                style="vertical-align: text-bottom"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAADwklEQVQ4ja1Ua0ibVxj+ug32Z4z+6FaNzd24aE3YqJdcmsQWSucmotHsd+kussp+2P4atKvWLbVbtYU5i+I6NJ91idFuRO0oaGtiLkNYnT+0Q5kT0VQRUWcMeHv2niMJdhf2xwMPH+c9z3m+97zvc44AQDhIHKgYF1TLFQyvEt4nXCWcYTGlVCakHHlNkEnSOCddoRQUx6QJPoNdm66Zys/Ji6lk8oc017A4W9CopLJZQ24eyu3l0B/PBsXqk4KpkpdonkpQSV4/epS+LxIUhWff3vR478Pb8yO+a3Mh70TOLMVfEUh98Pz5D9BFC51uL7q6f4Ax37BTXFRU21BfH75WU7NR/dlVOD//ApFIBB2i+GflhQuTH35UgXaxk+9hqLvxFSiJUnaUOBNhQfGeG42NTfjt6VP831hfX8ftW7dRWfkJ3J4eNH5zB/K0Y2eY4K8s9da7bejs/B67u7vY2IgjHo//Q2R7exux2AY2NzeTsYmJCdjtZSg8W+ijI7/AamhwlDuiLpfICdPT03C73RgdHeXi+8fOzg5WVlYwHBjG/Px8Mj41NQmtJuMhF2TdO2WzfcrId1u/hVImh0apBnUUVy5feU6wv78fGrWa1QoKQv3Nm8m1O01NoH6c44Itzc2/z83NIUubCX22jjqt493OzNBSNgG+YXV1FdmZWcgmji7rOOexuX/Iz9fX1tbYT8JCWkrqkSe/PIHH0wWb1QaLxQrLSStMRjNMJjMaGm7xDYMDg8g9kUMOMMJMccYpsJ1C7bXaZJY2iyUmMG+NjY3B5+ul4pajlFBW5sBlOm5V1UU0N7dwcjAYREmJHU7ndRQXl3Au49XVfZkUPG0riLOmHHK1t0eXlpY4MZ8MnqFSo+idd2E1n8TIyEjSJiaDETXV1Xz9TZ0eVjpNb28fX2euUJNjeA3JxDdYUHS59gpODZFK0kDGxvj4OFpaWrlV+vr6qE5SdpM45z2HA1tbW1zwXkcH21slaJQqQSVXHBZF8Q+28Cz6DD89eICZmRlOXF5exgDVLzFY8+i2UGyA24iNhYUFlvEo/ehlgdLfgzpd6/P5ZvfbJPF31sH/GtFoFKcLCiZJTMYfh4TgG+p0ga6O5NLFSz0sKyZmL7XDRWVgBv+7ydm8y+PZfUunbyOhw4lX6DlBMiZ/oiQpKYaPKypae7q751ldu71eunIxLC4uIhQK4brTOWM2Gr+mmun3PWd7gj9HIklEwmEhHAoJweFhjkAgcOjxo8fSUDCYS3GTf2goJ+D3p0bCe9x/w4G/2H8BnejTj/hDjDcAAAAASUVORK5CYII="
+              />
+              <span>Mona Media</span>
+            </a>
+          </div>
+          <div class="footer__social">
+            Social:
+            <ul class="social__list">
+              <li>
+                <a class="social__item fb" href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a class="social__item yt" href="#"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a class="social__item in" href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a class="social__item sk" href="#"
+                  ><i class="fab fa-skype"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="newfeed-new">
+      <div class="newfeed-main actPanel">
+        <div class="newfeed-main-title actBtn">
+          <div class="newfeed-title">new feed</div>
+          <img src="./assets/images/svg/arrow-sec.svg" alt="" />
+        </div>
+
+        <div class="newfeed__container">
+          <div class="newfeed__header">
+            <div class="newfeed__header-img">
+              <img src="./assets/images/newfeed.png" alt="" />
+            </div>
+            <div class="newfeed__header-title">mona new feed</div>
+            <div class="slideToggleBtn">
+              <img src="./assets/images/arrow-right.png" alt="" />
+            </div>
+            <div class="newfeed-main-btn closeBtn curItem">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="newfeed__body slide-toggle-hidden">
+            <div class="newfeed__list">
+              <div class="newfeed__item">
+                <a href="newfeed.html" class="newfeed__wrap">
+                  <div class="item__header">
+                    <div class="item__header-img">
+                      <img src="./assets/images/newfeed-avt.png" alt="" />
+                    </div>
+                    <div class="item__header-txt">
+                      <div class="name">Mona Media</div>
+                      <div class="time">18 THG 06, 2021</div>
+                    </div>
+                  </div>
+                  <div class="item__content">
+                    Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi
+                    được áp dụng vào tin học văn phòng, nội dung của nó vẫn
+                    không hề bị thay đổi
+                  </div>
+                  <div class="item__footer">
+                    <div class="item__footer-favorite">
+                      <div class="favorite__list">
+                        <div class="favorite__item">
+                          <img src="./assets/images/like.png" alt="" />
+                        </div>
+                        <div class="favorite__item">
+                          <img src="./assets/images/heart.png" alt="" />
+                        </div>
+                        <div class="favorite__item">
+                          <img src="./assets/images/care.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="favorite__count">2,3k</div>
+                    </div>
+                    <div class="item__footer-share">3 lượt chia sẻ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="newfeed__item">
+                <a href="newfeed.html" class="newfeed__wrap">
+                  <div class="item__header">
+                    <div class="item__header-img">
+                      <img src="./assets/images/newfeed-avt.png" alt="" />
+                    </div>
+                    <div class="item__header-txt">
+                      <div class="name">Mona Media</div>
+                      <div class="time">18 THG 06, 2021</div>
+                    </div>
+                  </div>
+                  <div class="item__content">
+                    Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi
+                    được áp dụng vào tin học văn phòng, nội dung của nó vẫn
+                    không hề bị thay đổi
+                  </div>
+                  <div class="item__footer">
+                    <div class="item__footer-favorite">
+                      <div class="favorite__list">
+                        <div class="favorite__item">
+                          <img src="./assets/images/like.png" alt="" />
+                        </div>
+                        <div class="favorite__item">
+                          <img src="./assets/images/heart.png" alt="" />
+                        </div>
+                        <div class="favorite__item">
+                          <img src="./assets/images/care.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="favorite__count">2,3k</div>
+                    </div>
+                    <div class="item__footer-share">3 lượt chia sẻ</div>
+                  </div>
+                </a>
+              </div>
+              <div class="newfeed__item">
+                <a href="newfeed.html" class="newfeed__wrap">
+                  <div class="item__header">
+                    <div class="item__header-img">
+                      <img src="./assets/images/newfeed-avt.png" alt="" />
+                    </div>
+                    <div class="item__header-txt">
+                      <div class="name">Mona Media</div>
+                      <div class="time">18 THG 06, 2021</div>
+                    </div>
+                  </div>
+                  <div class="item__content">
+                    Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi
+                    được áp dụng vào tin học văn phòng, nội dung của nó vẫn
+                    không hề bị thay đổi
+                  </div>
+                  <div class="item__footer">
+                    <div class="item__footer-favorite">
+                      <div class="favorite__list">
+                        <div class="favorite__item">
+                          <img src="./assets/images/like.png" alt="" />
+                        </div>
+                        <div class="favorite__item">
+                          <img src="./assets/images/heart.png" alt="" />
+                        </div>
+                        <div class="favorite__item">
+                          <img src="./assets/images/care.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="favorite__count">2,3k</div>
+                    </div>
+                    <div class="item__footer-share">3 lượt chia sẻ</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/libs/jquery-1.12.4.min.js"></script>
+
+    <script src="./js/libs/parallax/vanilla-tilt.min.js"></script>
+
+    <script src="./js/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/libs/select2/select2.min.js"></script>
+    <script src="./js/libs/gallery/lightgallery-all.min.js"></script>
+    <script src="./js/libs/aos/aos.js"></script>
+    <script src="./js/libs/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="./js/libs/wowjs/wow.min.js"></script>
+    <script src="./js/libs/smoothscroll/SmoothScroll.min.js"></script>
+    <script src="./js/libs/typing/typed.js@2.0.12"></script>
+    <script>
+      wow = new WOW({
+        boxClass: "wow",
+        animateClass: "animate__animated",
+        offset: 0,
+        mobile: false,
+        live: true,
+      });
+      wow.init();
+    </script>
+
+    <script src="./js/main.js" type="module" defer></script>
+  </body>
+</html>

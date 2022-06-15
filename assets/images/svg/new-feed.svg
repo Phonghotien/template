@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1286" data-name="Rectangle 1286" width="24" height="24" transform="translate(1620 1998)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="new-feed" transform="translate(-1620 -1998)" clip-path="url(#clip-path)">
+    <g id="newspaper" transform="translate(1620 1998)">
+      <path id="Path_824" data-name="Path 824" d="M23.3,5.672H19.781V3.563a.7.7,0,0,0-.7-.7H.7a.7.7,0,0,0-.7.7V17.625a3.52,3.52,0,0,0,3.516,3.516H21.188A2.812,2.812,0,0,0,24,18.328V6.375A.7.7,0,0,0,23.3,5.672ZM1.406,17.625V4.266H18.375V18.328a2.794,2.794,0,0,0,.378,1.406H3.516A2.112,2.112,0,0,1,1.406,17.625Zm21.188.7a1.406,1.406,0,0,1-2.812,0V7.078h2.813Z" fill="#fff"/>
+      <path id="Path_825" data-name="Path 825" d="M15.563,7.078H4.219a.7.7,0,0,0-.7.7v2.813a.7.7,0,0,0,.7.7H15.563a.7.7,0,0,0,.7-.7V7.781A.7.7,0,0,0,15.563,7.078Zm-.7,2.813H4.922V8.484h9.938Z" fill="#fff"/>
+      <path id="Path_826" data-name="Path 826" d="M15.563,12.7H4.219a.7.7,0,0,0,0,1.406H15.563a.7.7,0,0,0,0-1.406Z" fill="#fff"/>
+      <path id="Path_827" data-name="Path 827" d="M15.563,15.516H4.219a.7.7,0,0,0,0,1.406H15.563a.7.7,0,0,0,0-1.406Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

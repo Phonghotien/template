@@ -1,0 +1,321 @@
+.project {
+  margin-top: 9rem;
+  &-wrap {
+    display: flex;
+  }
+  &-left {
+    width: 35.15%;
+    background-size: cover;
+    background-position: left center;
+    padding: 15.36vw 4rem 8.8rem;
+    text-align: right;
+    position: relative;
+    &-title {
+      @include fz-40;
+      font-weight: bold;
+      color: $c-primary;
+      position: relative;
+      text-transform: uppercase;
+      width: max-content;
+      max-width: 100%;
+      margin-left: auto;
+      margin-bottom: 40rem;
+    }
+    &-subtitle {
+      font-family: 'Montserrat';
+      text-transform: uppercase;
+      color: $c-secondary;
+      font-weight: bold;
+      @include fz-20;
+      position: absolute;
+      top: 0;
+      left: -3.5rem;
+      transform: translateY(-100%);
+    }
+    &-number {
+      font-family: 'Oswald';
+      text-transform: uppercase;
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      bottom: 18rem;
+      right: 0;
+      @media only screen and(max-width:768px) {
+        position: relative;
+        bottom: 0 !important;
+        margin-top: 3rem;
+        align-items: stretch;
+        flex-direction: row-reverse;
+      }
+      .number {
+        background-color: $c-secondary;
+        color: #fff;
+        padding: 1.5rem 3.8rem;
+        @include fz-40;
+        display: flex;
+      }
+      .plus {
+        @include fz-24;
+      }
+      .txt {
+        opacity: 1;
+        @include fz-24;
+        padding: 2.8rem 2.5rem 2.6rem;
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+  &-right {
+    padding: 15.36vw 0 21.8vw;
+    width: calc(100% - 35.15%);
+    background-color: $c-primary;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    &-content {
+      padding: 0 4rem;
+      max-width: 65rem;
+    }
+    &-title {
+      font-family: 'Montserrat';
+      @include fz-60;
+      font-weight: 800;
+      line-height: 1;
+      text-transform: uppercase;
+      margin-bottom: 4rem;
+    }
+    &-txt {
+      @include fz-16;
+      line-height: calc(26 / 16);
+      margin-bottom: 7.5rem;
+    }
+    &-btn {
+      margin-left: -4rem;
+      a {
+        padding: 2.6rem 3.3rem 2.2rem;
+        background-color: #fff;
+        color: $c-secondary;
+        text-transform: uppercase;
+        @include fz-16;
+        font-weight: 900;
+        display: flex;
+        width: max-content;
+        max-width: 100%;
+        position: relative;
+        z-index: 1;
+        transition: 0.2s linear;
+
+        &::after,
+        &::before {
+          content: '';
+          display: block;
+          width: 0;
+          height: 100%;
+          background-color: $c-blu-light;
+          position: absolute;
+          left: 0;
+          top: 0;
+          transition: 0.7s ease;
+          z-index: -1;
+        }
+        &::after {
+          background-color: $c-secondary;
+          transition: 0.3s ease;
+        }
+        &:hover {
+          @media only screen and(min-width: 901px) {
+            color: #fff;
+            img {
+              filter: brightness(0) invert(1);
+            }
+            &::after {
+              width: 100%;
+              transition: 0.7s ease;
+            }
+            &::before {
+              width: 100%;
+              transition: 0.3s ease;
+            }
+          }
+        }
+      }
+      img {
+        display: block;
+        width: 4rem;
+        margin-left: 2rem;
+        margin-top: -0.2rem;
+        transition: 0.2s linear;
+      }
+    }
+    &-number {
+      font-family: 'Oswald';
+      text-transform: uppercase;
+      display: flex;
+      position: absolute;
+      bottom: 18rem;
+      left: 0;
+      transform: translateY(100%);
+      .number {
+        background-color: #3c3c3c;
+        color: #fff;
+        padding: 1.5rem 3.8rem;
+        @include fz-40;
+        display: flex;
+      }
+      .plus {
+        @include fz-24;
+      }
+      .txt {
+        opacity: 1;
+        color: #fff;
+        @include fz-24;
+        padding: 2.8rem 2.5rem 2.6rem;
+      }
+    }
+  }
+  &-show {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: center top;
+    transform: translateX(50%) rotate(45deg);
+    z-index: -1;
+    &-row {
+      display: flex;
+      &:nth-child(1) {
+        justify-content: center;
+      }
+      &:nth-child(2) {
+        margin-left: -12.5vw;
+        justify-content: flex-end;
+      }
+      &:nth-child(3) {
+        justify-content: flex-end;
+        margin-right: -17.7rem;
+      }
+      &:nth-child(4) {
+        justify-content: flex-end;
+      }
+    }
+    &-item {
+      width: 25vw;
+      margin: 1rem;
+      a {
+        display: block;
+        width: 100%;
+        padding-top: 66.66%;
+        position: relative;
+        opacity: 0.1;
+        transition: 0.3s linear;
+        &:hover {
+          opacity: 1;
+          img {
+            box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.16);
+          }
+        }
+      }
+      img {
+        transition: 0.3s ease-out;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .project {
+    &-right {
+      &-number {
+        bottom: 13rem;
+      }
+    }
+    &-left {
+      &-number {
+        bottom: 13rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .project {
+    &-right {
+      &-number {
+        .txt {
+          padding: 1.5rem 1.5rem 1.3rem;
+        }
+        .number {
+          padding: 5px 1.5rem 0;
+        }
+      }
+      &-txt {
+        margin-bottom: 5rem;
+      }
+    }
+    &-left {
+      &-number {
+        .txt {
+          padding: 1.5rem 1.5rem 1.3rem;
+        }
+        .number {
+          padding: 5px 1.5rem 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .project {
+    &-wrap {
+      position: relative;
+    }
+    &-left {
+      width: 0;
+      padding: 0;
+      position: static;
+      &-title {
+        color: #fff;
+        z-index: 2;
+        width: max-content;
+        max-width: 100vw;
+        left: 4rem;
+        top: 6rem;
+      }
+      &-number {
+        position: absolute;
+        z-index: 2;
+        padding: 0 4rem;
+        bottom: 6rem;
+        left: 0;
+        .txt {
+          color: #fff;
+          background-color: transparent;
+          text-align: center;
+        }
+
+        & .number {
+          min-width: 10rem;
+        }
+      }
+    }
+    &-right {
+      padding: 11rem 0 8rem;
+      width: 100%;
+      &-btn {
+        a {
+          padding: 1.5rem 1.5rem 1.3rem;
+        }
+      }
+      &-number {
+        position: static;
+        margin-top: 3rem;
+        transform: none;
+      }
+    }
+  }
+}

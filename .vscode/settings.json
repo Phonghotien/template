@@ -1,0 +1,21 @@
+{
+  "editor.formatOnSave": true,
+  "editor.minimap.maxColumn": 150,
+  "files.autoSaveDelay": 5000,
+  "prettier.printWidth": 150,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "liveServer.settings.port": 5501
+}

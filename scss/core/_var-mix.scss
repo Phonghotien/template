@@ -1,0 +1,69 @@
+$c-primary: #0086da;
+$c-blu-light: #53b9f8;
+$c-blu-dark: #0077c3;
+$c-sky-light: #25dcde;
+$c-secondary: #ff8303;
+$c-ora-dark: #e0790e;
+$c-gre-light: #6f6f6f;
+$c-gre-dark: #4c4c4c;
+
+@mixin center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin center-abs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin default-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@mixin overtext($args) {
+  display: -webkit-box;
+  -webkit-line-clamp: $args;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+// MIXINS
+@mixin max-media($args) {
+  @media screen and (max-width: $args) {
+    @content;
+  }
+}
+@mixin min-media($args) {
+  @media screen and (min-width: $args) {
+    @content;
+  }
+}
+@mixin mid-flex() {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+@mixin mid() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin lc($value: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $value;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -1,0 +1,150 @@
+.c-blog {
+}
+
+.c-blog-img {
+	position: relative;
+	padding-bottom: 67%;
+	background-color: $c-gre-light;
+	> a {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: 0.3s;
+	}
+	.c-blog-tag {
+		position: absolute;
+		// bottom: -50%;
+		bottom: -1.5rem;
+		left: 2rem;
+	}
+	&:hover {
+		img {
+			transform: scale(1.1);
+		}
+	}
+}
+.c-blog-content {
+	padding-top: 2rem;
+	.tt {
+		font-weight: bold;
+		margin-bottom: 0.5rem;
+		transition: 0.3s;
+		@include fz-18;
+		@include overtext(2);
+		&:hover {
+			color: $c-primary;
+		}
+	}
+	.desc {
+		color: rgba($color: #000, $alpha: 0.7);
+		margin-top: 1rem;
+		@include fz-18;
+		@include overtext(2);
+	}
+}
+.c-blog-tag {
+	display: block;
+	width: max-content;
+	font-size: 1.2rem;
+	color: #fff;
+	text-transform: uppercase;
+	transition: 0.3s;
+	a {
+		display: block;
+		padding: 0.6rem;
+	}
+	&.primary {
+		background-color: $c-primary;
+	}
+	&.orange {
+		background-color: $c-secondary;
+	}
+	&.purple {
+		background-color: #ac61ea;
+	}
+	&.pink {
+		background-color: #f25b64;
+	}
+	&:hover {
+		box-shadow: 1rem 1rem 3rem rgba($color: #000, $alpha: 0.16);
+	}
+}
+.c-blog-date {
+	color: rgba($color: #3c3c3c, $alpha: 0.6);
+	text-transform: uppercase;
+	@include fz-14;
+}
+
+//
+.c-blog-row {
+	display: flex;
+	.c-blog-img {
+		width: 8rem;
+		height: 8rem;
+		padding-bottom: 0;
+	}
+	.c-blog-content {
+		padding-top: 0;
+		padding-right: 1rem;
+		width: calc(100% - 8rem);
+	}
+	.tt {
+		font-weight: normal;
+		margin-top: 0.5rem;
+		margin-bottom: 0;
+		@include fz-14;
+	}
+}
+//
+.c-blog-row-2 {
+	display: flex;
+	.c-blog {
+		margin-bottom: 3rem;
+		padding-bottom: 3rem;
+		border-bottom: 1px solid rgba($color: #000, $alpha: 0.1);
+	}
+	.c-blog-img {
+		width: 50%;
+		height: 25rem;
+		padding-bottom: 0;
+	}
+	.c-blog-content {
+		width: 50%;
+		padding-right: 0;
+		padding-top: 0;
+		padding-left: 2.5rem;
+	}
+	.tt {
+		font-weight: bold;
+		@include fz-24;
+	}
+	.c-blog-tag {
+		@include fz-14;
+	}
+	.c-blog-date {
+		@include fz-16;
+	}
+	@include max-media(599px) {
+		flex-wrap: wrap;
+		.c-blog-img {
+			width: 100%;
+		}
+		.c-blog-content {
+			width: 100%;
+			padding-left: 0;
+			padding-top: 1.5rem;
+		}
+		.c-blog-tag {
+			margin-bottom: 0.5rem;
+		}
+	}
+}

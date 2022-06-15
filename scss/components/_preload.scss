@@ -1,0 +1,36 @@
+.preload {
+  width: 100vw;
+  height: 100vh;
+  background-color: $c-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s linear;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  color: #fff;
+  font-weight: 700;
+  line-height: 0.75;
+  transform: translate3d(0, 0, 0);
+  transition: 0.3s ease-in;
+  @include fz-170;
+  &__container {
+    overflow: hidden;
+  }
+  &__txt {
+    text-transform: uppercase;
+    display: inline-block;
+    transform: translate3d(0, 130%, 0);
+    transition: transform 0.8s ease;
+    line-height: 0.75;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .preload {
+    @include fz-90;
+    &__container {
+      margin-top: -5rem;
+    }
+  }
+}

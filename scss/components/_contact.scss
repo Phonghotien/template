@@ -1,0 +1,128 @@
+.contact {
+    position: relative;
+    z-index: 4;
+    &__about {
+        padding-bottom: 22.5rem;
+        overflow: hidden;
+    }
+    .intro__line {
+        margin-left: 0;
+        width: max-content;
+        &::after {
+            top: 3rem;
+            left: unset;
+            right: -16rem;
+            transform: translate(100%, -50%);
+        }
+        &::before {
+            top: 3rem;
+            left: unset;
+            right: -15rem;
+        }
+    }
+    .intro__vid__wrap {
+        left: 3rem;
+        right: unset;
+        height: calc(100% + 30rem);
+        margin: -15rem 0 -15rem;
+    }
+    &__vid {
+        transform: translate(20%, 20%);
+    }
+}
+
+.contact.active {
+    .intro__line {
+        &::after {
+            width: 45rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact {
+        &__about {
+            padding-bottom: 10rem;
+        }
+        .intro {
+            &__container {
+                flex-direction: row;
+            }
+            &__item {
+                width: 50%;
+                align-self: stretch;
+            }
+        }
+        .dia__65 {
+            top: 50%;
+            transform: translate(5rem, -50%) scale(0.8);
+        }
+        .intro__vid__wrap {
+            left: 1.5rem;
+            height: calc(100% + 12rem);
+            margin: -6rem 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .contact {
+        &__about {
+            padding-bottom: 3rem;
+        }
+        padding: 0;
+        .section__title-40 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .intro {
+            &__container {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+            &__item {
+                width: 100%;
+                max-width: 768px;
+                align-self: center;
+                margin-top: 3rem;
+            }
+        }
+        .dia__65 {
+            left: 50%;
+            transform: translate(-50%, -3rem) scale(0.7);
+            position: relative;
+        }
+        .intro__vid__wrap {
+            left: 0;
+            margin: 0;
+            position: relative;
+            width: 100%;
+            @include max-media(500px) {
+                margin: -10% 0;
+            }
+            @include max-media(400px) {
+                margin: -24% 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact {
+        .dia__65 {
+            transform: translate(-50%, -3rem) scale(0.6);
+        }
+        .dia__link {
+            width: 60px;
+            height: 60px;
+            &::after {
+                width: 100px;
+                height: 100px;
+            }
+            .letter {
+                padding-top: 65px;
+            }
+        }
+    }
+}

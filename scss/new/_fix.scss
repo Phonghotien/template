@@ -1,0 +1,256 @@
+.sec-necessary .arr .swiper-button-prev {
+  left: 0;
+}
+
+.sec-necessary .arr .swiper-button-next {
+  right: 0;
+}
+
+.sec-blog-custom .c-blog-custom .blog-content .wrapper-btn .btn {
+  padding: 1.6rem 1.5rem 1.4rem;
+}
+
+.trend {
+  position: relative;
+  z-index: 3;
+}
+
+.trend-slide .swiper-slide {
+  width: max-content;
+}
+
+.trend-slide {
+  width: calc(100% - 12rem);
+  z-index: -1;
+  padding: 0;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 100%;
+    background-color: #feeeef;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    transition: 0.3s ease;
+
+    @media(max-width: 768px) {
+      content: none;
+    }
+  }
+}
+
+.trend-slide .swiper-wrapper {
+  width: calc(100% + 4rem);
+}
+
+.trend-wrap .tt {
+  width: 13rem;
+  position: relative;
+
+  img {
+    filter: brightness(0) invert(1);
+    margin-right: 3.3rem;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-color: #f25b64;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    top: 50%;
+    transform-origin: top left;
+    transform: translateX(-50%) rotate(-45deg);
+    transition: 0.3s ease;
+  }
+}
+
+.pagination li:last-child,
+.pagination li:first-child {
+
+  a,
+  span {
+    background-color: #fff;
+  }
+
+  &:hover {
+
+    a,
+    span {
+      background-color: $c-secondary;
+    }
+  }
+}
+
+.customer-other .pagination li,
+.bg-white .pagination li {
+
+  a,
+  span {
+    background-color: #f8f8f8;
+  }
+
+  &:hover {
+
+    a,
+    span {
+      background-color: $c-secondary;
+    }
+  }
+
+  &.current {
+
+    a,
+    span {
+      background-color: $c-secondary;
+    }
+  }
+}
+
+.sec-blog-recom .blog-gallery .blog-content .txt-title,
+.sec-category .blog-gallery .blog-content .txt-title {
+  font-weight: bold;
+  margin-bottom: 6rem;
+  text-transform: unset;
+
+  @media only screen and (max-width: 1200px) {
+    margin-bottom: 3rem;
+  }
+}
+
+.satisfied__container .satisfied__content .satisfied__desc>p,
+.title-demo__container .title__content .title__desc,
+.c-recruitment .desc,
+.sec-new-page .blog-aside-website .blog-content .wrapper-content,
+.sec-blog-recom .blog-gallery .blog-content .txt-desc,
+.sec-category .blog-gallery .blog-content .txt-desc,
+.sec-blog-custom .c-blog-custom .blog-content .wrapper-content {
+  @include fz-16;
+}
+
+.customer-other__wrap .customer-other__view {
+  font-weight: 900;
+}
+
+.sec-blog-custom .txt-title {
+  text-transform: unset;
+}
+
+@media only screen and (min-width: 670px) {
+  .box-tuvan .wrapper-content {
+    padding: 0 5rem;
+  }
+}
+
+.box-tuvan .wrapper-content .txt-title {
+  text-transform: unset;
+}
+
+.sec-new-page.bg-white .c-blog-flex .item-c,
+.sec-new-page.bg-white .c-blog-custom .blog-content {
+  background-color: #f8f8f8;
+}
+
+.sec-new-page .c-blog-custom .blog-content,
+.sec-new-page .c-blog-flex .item-c {
+  background-color: #fff;
+}
+
+.blog-dt-info {
+  font-size: 1.6rem;
+}
+
+.blog-related .swiper-button-wrap {
+  margin-top: unset;
+}
+
+.x-social-wrap {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translateX(calc(-100% - 2.5rem));
+  height: 100%;
+
+  @media(max-width: 1500px) {
+    transform: translateX(-100%);
+  }
+
+  @media(max-width: 1200px) {
+    position: relative;
+    top: 0;
+    transform: unset;
+    height: auto;
+    margin-top: 1.5rem;
+  }
+}
+
+.list-social-custom {
+  position: sticky;
+  z-index: 9;
+  top: 9rem;
+  transform: none;
+}
+
+.blog-dt-custom {
+  position: relative;
+}
+
+.list-social-custom ul li a .txt {
+  padding: 1.3rem 1.5rem 1.3rem;
+}
+
+.list-social-custom ul li a img {
+  display: block;
+}
+
+.recruitment .section__title-40 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.recruitment .desc {
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+  @include fz-16;
+}
+
+.title-demo__container .title__content .title__desc>p::before {
+  content: '';
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  position: absolute;
+  background: none;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  top: 1.2rem;
+  left: 0;
+  background-color: #0086da;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.blog-related {
+  .swiper-pagination {
+    position: static;
+    margin: 0 auto;
+    transform: none;
+
+    &-bullet {
+      background-color: #000;
+      border-radius: 0;
+      transform: rotate(45deg);
+
+      &-active {
+        background-color: $c-secondary;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_108" data-name="Rectangle 108" width="12" height="12" transform="translate(1705 3029)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff6680"/>
+      <stop offset="1" stop-color="#e61739"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f9607d"/>
+      <stop offset="1" stop-color="#e42344"/>
+    </linearGradient>
+  </defs>
+  <g id="icon-love" transform="translate(-1705 -3029)" clip-path="url(#clip-path)">
+    <g id="download_1_" data-name="download (1)" transform="translate(1705 3029)">
+      <path id="Path_45" data-name="Path 45" d="M6,0a6,6,0,1,0,6,6A6,6,0,0,0,6,0Z" fill="url(#linear-gradient)"/>
+      <path id="Path_46" data-name="Path 46" d="M6,0a6,6,0,1,0,6,6A6,6,0,0,0,6,0Z" fill="url(#linear-gradient-2)"/>
+      <path id="Path_47" data-name="Path 47" d="M8.23,3.5A1.729,1.729,0,0,0,6.375,4.868,1.728,1.728,0,0,0,4.521,3.5,2.056,2.056,0,0,0,2.667,6.058c.51,2.355,3.708,4.005,3.708,4.005s3.2-1.65,3.709-4.005A2.057,2.057,0,0,0,8.23,3.5" transform="translate(-0.375 -0.5)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

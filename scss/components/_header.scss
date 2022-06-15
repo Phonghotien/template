@@ -1,0 +1,491 @@
+.admin-bar {
+  .header {
+    top: 32px;
+  }
+  @media only screen and (max-width: 768px) {
+    .header {
+      top: 46px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .header {
+      &.small {
+        top: 0;
+      }
+    }
+  }
+}
+.header {
+  background-color: $c-blu-dark;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  transition: 0.3s linear;
+  color: #fff;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    margin-left: 7rem;
+    width: 9rem;
+    &__img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &.small {
+    box-shadow: 1rem 1rem 3rem rgba(0, 119, 195, 0.4);
+  }
+  &__left {
+    width: calc(100% - 9rem);
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+  &__btn {
+    &__wrap {
+      .button {
+        height: 9rem;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        &::after {
+          background-color: $c-sky-light;
+        }
+        &::before {
+          background-color: $c-blu-dark;
+        }
+      }
+    }
+  }
+}
+
+.menu {
+  width: max-content;
+  height: auto;
+  position: relative;
+  &__form {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    padding: 0 2rem;
+    align-items: center;
+    position: relative;
+    z-index: 11;
+    height: 100%;
+  }
+  &-item {
+    position: relative;
+    z-index: 11;
+    transition: 0.3s linear;
+    height: 100%;
+    &.dropdown {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 3rem;
+        background: transparent;
+      }
+    }
+    a {
+      @include fz-16;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 1.5rem 2rem;
+      transition: 0.2s linear;
+      position: relative;
+      z-index: 12;
+      transition: 0.2s linear;
+    }
+    & .btnDrop {
+      margin-left: 1rem;
+      transition: 0.3s;
+      pointer-events: none;
+
+      @media(max-width: 1200px) {
+        pointer-events: auto;
+        position: absolute;
+        padding: 1.5rem;
+        right: 0;
+        margin-left: 0;
+      }
+
+      &.active {
+        transform: rotate(45deg);
+      }
+    }
+    &.current-menu-item {
+      > a {
+        @media only screen and (min-width: 1025px) {
+          background: $c-secondary;
+        }
+        &:hover {
+          @media only screen and(min-width: 901px) {
+            &::after {
+              background-color: $c-secondary;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        @media only screen and (min-width: 1025px) {
+          > a {
+            color: #fff;
+          }
+        }
+      }
+    }
+    &:hover {
+      @media only screen and (min-width: 1025px) {
+        > a {
+          background: $c-secondary;
+          color: #fff;
+        }
+
+        & .submenu {
+          opacity: 1;
+          pointer-events: auto;
+          top: calc(100% + 2.25rem);
+        }
+      }
+    }
+    & .submenu {
+      position: absolute;
+      top: calc(100% + 5.25rem);
+      left: 0;
+      min-width: 35.3rem;
+      background: #fff;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.16);
+      transition: 0.3s linear;
+      opacity: 0;
+      pointer-events: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 5.4rem;
+        bottom: calc(100% - 1px);
+        width: 1.2rem;
+        height: 0.7rem;
+        background-color: #fff;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      }
+
+      @media only screen and (max-width: 1200px) {
+        transition: unset;
+        display: none;
+        position: relative;
+        top: 0;
+        max-height: 100%;
+        opacity: 1;
+        pointer-events: auto;
+        box-shadow: none;
+        padding-left: 1.5rem;
+        margin-bottom: 2.5rem;
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      & li {
+        &.current {
+          & a {
+            color: #fff;
+            font-weight: bold;
+            background: $c-secondary;
+            @media only screen and (max-width: 1200px) {
+              color: $c-secondary;
+              background: transparent;
+            }
+          }
+        }
+        &:last-child {
+          & a {
+            border-bottom: 0;
+          }
+        }
+      }
+
+      & a {
+        display: block;
+        padding: 2rem;
+        color: #000;
+        line-height: 1.2;
+        transition: 0.3s;
+        font-weight: 400;
+
+        @media only screen and (max-width: 1200px) {
+          padding: 1rem 0;
+        }
+
+        &:hover {
+          @media(min-width: 1201px) {
+            color: #fff;
+            background: $c-secondary;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  &__btn {
+    display: none;
+    &.active {
+      .menu__svg {
+        transform: rotate(45deg);
+        path {
+          fill: none;
+          transition: stroke-dasharray 0.4s, stroke-dashoffset 0.4s;
+          stroke: #fff;
+          stroke-linecap: round;
+          &:nth-child(1) {
+            stroke-dasharray: 40 160;
+          }
+          &:nth-child(3) {
+            stroke-dasharray: 40 85;
+          }
+          &:nth-child(2) {
+            transform-origin: 50%;
+            transform: rotate(90deg);
+          }
+          &:nth-child(1),
+          &:nth-child(3) {
+            stroke-dashoffset: -64px;
+          }
+        }
+      }
+    }
+  }
+  &__bg {
+    display: none;
+  }
+  &__svg {
+    width: 6rem;
+    height: 6rem;
+    transition: 0.4s ease;
+
+    path {
+      fill: none;
+      transition: stroke-dasharray 0.4s, stroke-dashoffset 0.4s;
+      stroke: #fff;
+      stroke-width: 3;
+      stroke-linecap: round;
+      &:nth-child(1) {
+        stroke-dasharray: 40 160;
+      }
+      &:nth-child(2) {
+        transform: rotate(0);
+      }
+      &:nth-child(3) {
+        stroke-dasharray: 40 85;
+        transform-origin: 50%;
+        transition: transform 0.4s, stroke-dashoffset 0.4s;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .menu {
+    &__list {
+      padding: 0 1.5rem;
+    }
+    &-item {
+      a {
+        padding: 1.5rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header {
+    &.small {
+      .menu {
+        height: calc(100vh - 6.2rem);
+        height: calc(var(--vh, 1vh) * 100 - 6.2rem);
+        top: 6rem;
+      }
+    }
+    &__logo {
+      width: 8rem;
+      margin-left: 1.5rem;
+    }
+    &__btn__wrap {
+      .button {
+        height: 6rem;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    height: calc(100vh - 6rem);
+    height: calc(var(--vh, 1vh) * 100 - 6rem);
+    top: 6rem;
+    right: 0;
+    position: fixed;
+    z-index: 13;
+    width: 100%;
+    pointer-events: none;
+    &.active {
+      pointer-events: auto;
+      .menu {
+        &__list {
+          transform: translateX(0);
+        }
+        &__bg {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__list {
+      color: $c-blu-dark;
+      background-color: #fff;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+      height: 100%;
+      width: 100%;
+      max-width: 450px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      z-index: 13;
+      margin: 0;
+      transition: 0.3s linear;
+      transform: translateX(100%);
+    }
+    &-item {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid rgba(18, 114, 38, 0.2);
+      &:hover {
+        @media only screen and(min-width: 901px) {
+          color: $c-secondary;
+        }
+      }
+
+      &.current-menu-item {
+        > a {
+          &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $c-blu-dark;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            transition: 0.2s ease;
+          }
+          &:hover {
+            @media only screen and(min-width: 901px) {
+              color: $c-secondary;
+              &::after {
+                background-color: $c-secondary;
+              }
+            }
+          }
+        }
+      }
+    }
+    a {
+      width: 100%;
+      height: auto;
+      padding: 1.5rem;
+
+      @media(max-width: 1200px) {
+        padding-right: 5rem;
+        justify-content: flex-start;
+      }
+    }
+
+    &__btn {
+      background-color: rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      z-index: 10;
+
+      cursor: pointer;
+      margin-left: 1.5rem;
+    }
+    &__bg {
+      display: block;
+      position: absolute;
+      z-index: 12;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.4);
+      transition: 0.3s linear;
+      opacity: 0;
+    }
+    &__form {
+      display: block;
+      padding: 3rem 0 2rem;
+      &__title {
+        @include fz-30;
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+      .form__item .button {
+        margin: 0;
+      }
+    }
+  }
+  // &__search {
+  //   display: none;
+  // }
+
+  .submenu {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    background-color: transparent;
+    color: #127226;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s linear;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    &.small {
+      .menu {
+        height: calc(100vh - 60px);
+        height: calc(var(--vh, 1vh) * 100 - 60px);
+        top: 54px;
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .menu__btn {
+    margin-left: 0.5rem;
+  }
+  .header__btn__wrap {
+    .button {
+      padding: 1.3rem 1.5rem 1.1rem;
+      margin-left: 0.5rem;
+    }
+  }
+}

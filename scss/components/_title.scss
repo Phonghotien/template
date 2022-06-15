@@ -1,0 +1,210 @@
+.title-demo {
+  padding-top: 11rem;
+  padding-bottom: 4.5rem;
+
+  @media (max-width: 1200px) {
+    padding-top: 5rem;
+  }
+
+  @media (max-width: 400px) {
+    padding-bottom: 0;
+  }
+
+  &__container {
+    @include mid-flex();
+    width: calc(100% + 3rem);
+    margin-left: -1.5rem;
+
+    @media (max-width: 1023px) {
+      flex-direction: column-reverse;
+      -webkit-flex-direction: column-reverse;
+    }
+
+    .title__num {
+      width: 50%;
+      padding: 0 1.5rem;
+
+      @media (max-width: 1023px) {
+        width: 100%;
+        padding: 1.5rem;
+      }
+
+      @media (max-width: 400px) {
+        height: 30rem;
+      }
+
+      .cubes-bg {
+        transform: translateX(-5%) rotate(-45deg);
+
+        @media (max-width: 1200px) {
+          transform: translateX(-5%) rotate(-45deg) scale(0.8);
+        }
+
+        @media (max-width: 1023px) {
+          transform: rotate(-45deg) scale(0.9);
+        }
+
+        @media (max-width: 500px) {
+          transform: rotate(-45deg) scale(0.7);
+        }
+
+        @media (max-width: 400px) {
+          transform: translateY(-25%) rotate(-45deg) scale(0.6);
+        }
+
+        &__col {
+          &>.cubes-bg__row {
+            @include mid-flex();
+            align-items: flex-end;
+            -webkit-align-items: flex-end;
+
+            .cubes-bg__item {
+              position: relative;
+              margin: 1rem;
+
+              & .num {
+                @include mid();
+                transform: translate(-50%, -50%) rotate(45deg);
+                @include fz-80;
+                font-family: "Oswald";
+                font-weight: bold;
+                color: #fff;
+                z-index: 1;
+
+                @media (max-width: 800px) {
+                  font-size: 6rem;
+                }
+
+                & .icon {
+                  position: absolute;
+                  top: 0rem;
+                  right: 0;
+                  transform: translateX(100%);
+                  @include fz-50;
+                  font-weight: 400;
+
+                  @media (max-width: 1200px) {
+                    top: 0;
+                  }
+                }
+
+                &-wrap {
+                  position: relative;
+                }
+              }
+
+              &>.txt {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                @include fz-24;
+                line-height: calc(38 / 24);
+                font-family: "Oswald";
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                color: rgba(60, 60, 60, 0.4);
+              }
+
+              &.cubes__25 {
+                width: 25rem;
+
+                &>.cubes {
+                  width: 100%;
+                  padding-top: 100%;
+                  background: $c-primary;
+                  overflow: hidden;
+                  position: relative;
+                }
+
+                .txt {
+                  position: absolute;
+                  left: 0;
+                  transform: translate(-57.5%, -50%) rotate(90deg);
+                }
+              }
+
+              &.cubes__11 {
+                width: 11rem;
+
+                &>.cubes {
+                  width: 100%;
+                  padding-top: 100%;
+                  background: #6f6f6f;
+                }
+              }
+
+              &.cubes__20 {
+                width: 20rem;
+                margin-left: 12rem;
+
+                & .cubes {
+                  width: 100%;
+                  padding-top: 100%;
+                  background: #4c4c4c;
+                }
+
+                .txt {
+                  right: 0;
+                  transform: translate(59.5%, -50%) rotate(90deg);
+                  @include fz-20;
+                  line-height: calc(38 / 20);
+                  letter-spacing: 1.3px;
+                }
+
+                .num {
+                  & .icon {
+                    @include fz-30;
+                    top: 2rem;
+
+                    @media (max-width: 1200px) {
+                      top: 1rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .title__content {
+      width: 50%;
+      padding: 0 1.5rem;
+
+      @media (max-width: 1023px) {
+        width: 100%;
+        padding: 1.5rem;
+      }
+
+      .title {
+        &__title {
+          margin-bottom: 3.25rem;
+        }
+
+        &__desc {
+          @include fz-20;
+          line-height: calc(32 / 20);
+          color: rgba(0, 0, 0, 0.8);
+
+          &>p {
+            position: relative;
+            padding-left: 2.6rem;
+            margin-bottom: 3rem;
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0.7rem;
+              left: 0;
+              width: 1rem;
+              height: 1rem;
+              background: url("../assets/images/ser1.png") no-repeat;
+              background-size: 100% 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

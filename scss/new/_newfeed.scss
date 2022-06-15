@@ -1,0 +1,210 @@
+.newfeed {
+  position: sticky;
+  top: 9rem;
+  z-index: 8;
+
+  @media only screen and (max-width: 1400px) {
+    display: none;
+  }
+
+  &-wrap {
+    position: relative;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #0077c3;
+    color: #fff;
+    height: calc(100vh - 9rem);
+  }
+
+  &-title {
+    @include fz-18;
+    letter-spacing: 0.3em;
+    line-height: 2;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    position: absolute;
+    transform-origin: left center;
+    transform: translateY(50%) rotate(-90deg);
+    bottom: 2.5rem;
+    left: 50%;
+    white-space: nowrap;
+
+    @media only screen and (max-width: 1200px) {
+      transform: unset;
+      position: relative;
+      left: unset;
+      bottom: unset;
+    }
+  }
+
+  &-social {
+    @media only screen and (max-width: 1200px) {
+      display: none;
+    }
+
+    &-icon {
+      padding: 2.5rem 1.7rem;
+
+      @include max-media(1450px) {
+        padding: 1.5rem 1rem;
+      }
+
+      a {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+
+        @include max-media(1450px) {
+          margin-bottom: 1rem;
+          width: 3rem;
+          height: 3rem;
+
+          & img {
+            margin: 0 auto;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &-title {
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.2);
+      height: 12.3rem;
+      width: 100%;
+    }
+  }
+
+  &-main {
+    position: relative;
+
+    &.active {
+      & .newfeed-main-title {
+        background: #3C3C3C;
+
+        @media only screen and (max-width: 1200px) {
+          display: flex;
+        }
+
+        img {
+          transform: rotate(0);
+          filter: unset;
+          -webkit-filter: unset;
+
+          @media only screen and (max-width: 1200px) {
+            transform: rotate(270deg);
+          }
+        }
+      }
+
+      & .newfeed-title {
+        color: $c-secondary;
+      }
+    }
+
+    &-btn {
+      width: 4rem;
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 1rem;
+      border-radius: 999px;
+      padding-top: 2px;
+      transition: 0.2s linear;
+      display: none;
+
+      &:hover {
+        background-color: $c-primary;
+      }
+    }
+
+    &-title {
+      .newfeed-title {
+        bottom: 5rem;
+
+        @media only screen and (max-width: 1200px) {
+          bottom: 0;
+        }
+      }
+
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $c-secondary;
+      height: 17.8rem;
+      width: 100%;
+      display: flex;
+      padding: 2.5rem;
+      justify-content: center;
+      align-items: flex-end;
+
+      @media only screen and (max-width: 1200px) {
+        height: auto;
+        padding: 0.8rem 1.5rem;
+        align-items: center;
+        top: unset;
+        transform: unset;
+      }
+
+      img {
+        transition: 0.2s linear;
+        filter: brightness(0) invert(1);
+        -webkit-filter: brightness(0) invert(1);
+        transform: rotate(180deg);
+
+        @media only screen and (max-width: 1200px) {
+          transform: rotate(90deg);
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+
+  &-new {
+    position: fixed;
+    z-index: 5;
+    color: #fff;
+    @include center-flex();
+    flex-direction: column;
+    align-items: stretch;
+    height: calc(100vh - 9rem);
+    top: 9rem;
+
+    &.newfeed-home {
+      justify-content: flex-start;
+      -webkit-justify-content: flex-start;
+      background: $c-primary;
+
+      @include max-media(1450px) {
+        flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+      }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      display: none;
+      bottom: 0;
+      position: sticky;
+      top: unset;
+      transform: translateY(0);
+      height: 100%;
+
+      .newfeed-main.active .newfeed__container {
+        width: 100vw;
+      }
+    }
+  }
+}

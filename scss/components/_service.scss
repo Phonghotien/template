@@ -1,0 +1,155 @@
+.service {
+  text-align: center;
+  position: relative;
+  @media only screen and (min-width: 1201px) {
+    padding-bottom: 0;
+  }
+  z-index: 2;
+  &__title {
+    @include fz-42;
+    width: max-content;
+    margin: 0 auto 1rem;
+    padding: 0 3rem;
+    text-align: center;
+    font-weight: 900;
+    max-width: 100%;
+    .blue {
+      color: $c-primary;
+    }
+  }
+  .section__title {
+    margin: 0 auto 1rem;
+  }
+  .intro__list {
+    text-align: left;
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  &__para {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: 0.3s ease;
+    &.par {
+      &1 {
+        top: 45rem;
+        left: 47rem;
+      }
+      &2 {
+        top: 45rem;
+        right: 35rem;
+      }
+      &3 {
+        top: 50%;
+        left: 20rem;
+      }
+      &4 {
+        top: 45%;
+        right: 15rem;
+      }
+      &5 {
+        top: 70%;
+        right: 25rem;
+      }
+      &6 {
+        top: 35rem;
+        left: 22rem;
+      }
+      &7 {
+        top: 20rem;
+        right: 3rem;
+      }
+      &8 {
+        top: 80%;
+        right: 5rem;
+      }
+      &9 {
+        bottom: -27rem;
+        left: 37rem;
+      }
+    }
+  }
+  &-img {
+    display: block;
+    margin: 2rem;
+    text-align: center;
+    &.mgb {
+      margin: 0 auto 7rem;
+    }
+  }
+  &-decor {
+    &1 {
+      position: absolute;
+      top: 50%;
+      right: 11.5rem;
+      transform: translate(50%, -60%);
+      z-index: -1;
+      pointer-events: none;
+    }
+    &2 {
+      position: absolute;
+      width: 6.6rem;
+      height: 6.6rem;
+      top: 18rem;
+      right: 11.5rem;
+      transform-origin: center;
+      background-color: rgba(0, 0, 0, 0.07);
+      transform: translateX(50%) rotate(45deg);
+      z-index: -1;
+      pointer-events: none;
+    }
+    &3 {
+      position: absolute;
+      width: 20.2rem;
+      height: 20.2rem;
+      top: 50%;
+      left: 0;
+      transform-origin: center;
+      background-color: $c-primary;
+      transform: translate(-50%, -50%) rotate(45deg);
+      z-index: -1;
+      pointer-events: none;
+    }
+    &4 {
+      position: absolute;
+      width: 4.8rem;
+      height: 4.8rem;
+      left: 6rem;
+      bottom: 25%;
+      transform-origin: right;
+      background-color: $c-sky-light;
+      box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.16);
+      transform: rotate(45deg);
+      z-index: -1;
+      pointer-events: none;
+    }
+  }
+}
+@media only screen and (max-width: 1440px) {
+}
+@media only screen and (max-width: 900px) {
+  .service {
+    &__title {
+      @include fz-30;
+    }
+    .section__title {
+      margin: 1rem 0;
+    }
+    &__title {
+      margin-bottom: 3rem;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service {
+    .section__title {
+      br {
+        display: none;
+      }
+      .blue {
+        display: inline;
+      }
+    }
+  }
+}

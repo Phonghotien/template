@@ -1,0 +1,131 @@
+.imagerotate {
+  position: relative;
+
+  &__col {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-44%, -30%) rotate(45deg);
+    -webkit-transform: translate(-44%, -30%) rotate(45deg);
+
+    @media (max-width: 1440px) {
+      transform: translate(-30%, -30%) rotate(45deg) scale(0.8);
+      -webkit-transform: translate(-30%, -30%) rotate(45deg) scale(0.8);
+    }
+
+    @media (max-width: 1200px) {
+      left: 50%;
+      transform: translate(-50%, -90%) rotate(70deg) scale(0.8);
+      -webkit-transform: translate(-50%, -90%) rotate(70deg) scale(0.8);
+    }
+
+    @media (max-width: 900px) {
+      transform: translate(-50%, -80%) rotate(70deg) scale(0.6);
+      -webkit-transform: translate(-50%, -80%) rotate(70deg) scale(0.6);
+    }
+
+    @media (max-width: 600px) {
+      transform: translate(-50%, -75%) rotate(70deg) scale(0.4);
+      -webkit-transform: translate(-50%, -75%) rotate(70deg) scale(0.4);
+    }
+  }
+
+  &__item {
+    margin: 0.75rem;
+    // overflow: hidden;
+    position: relative;
+
+    &.imgrotate__9 {
+      width: 9rem;
+      margin-left: 42rem;
+
+      .cubes {
+        width: 100%;
+        padding-top: 100%;
+        background: $c-primary;
+      }
+    }
+    &.imgrotate__46 {
+      width: 46rem;
+    }
+    &.imgrotate__19 {
+      width: 19rem;
+    }
+    &.imgrotate__33 {
+      width: 33rem;
+      margin-left: 21rem;
+    }
+
+    &-img {
+      width: 100%;
+      padding-top: 100%;
+      overflow: hidden;
+      position: relative;
+      & > img {
+        width: max-content;
+        max-width: none;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        transition: 1s;
+
+        &:hover {
+          transform: translate(-50%, -50%) rotate(-45deg) scale(1.1);
+        }
+      }
+    }
+
+    &-txt {
+      position: absolute;
+      right: 0;
+      // -moz-transform: translate(27%, -52%) scaleX(-1) rotate(45deg);
+      // -o-transform: translate(27%, -52%) scaleX(-1) rotate(45deg);
+      // -webkit-transform: translate(27%, -52%) scaleX(-1) rotate(45deg);
+      transform: translate(56%, -926%) scaleX(-1) rotate(90deg);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+
+      font-family: "Oswald", sans-serif;
+      @include fz-30;
+      text-transform: uppercase;
+      line-height: calc(34 / 30);
+      letter-spacing: 0.2em;
+      color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  // cubes
+  &__cubes-bg {
+    position: absolute;
+    transform: rotate(45deg);
+
+    & > .cubes {
+      width: 100%;
+      padding-top: 100%;
+      background: $c-primary;
+
+      &.cubes__sub {
+        background: $c-sky-light;
+      }
+    }
+
+    &.imgrotate__37 {
+      top: 65rem;
+      width: 37rem;
+      left: -56.5rem;
+    }
+
+    &.imgrotate__86 {
+      top: 100rem;
+      width: 8.6rem;
+      left: -25.8rem;
+    }
+  }
+}

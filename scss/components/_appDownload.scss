@@ -1,0 +1,174 @@
+.app-download {
+  &__container {
+    @include mid-flex();
+    align-items: center;
+    -webkit-align-items: center;
+    width: calc(100% + 3rem);
+    margin-left: -1.5rem;
+
+    @media (max-width: 739px) {
+      flex-direction: column;
+      -webkit-flex-direction: column;
+    }
+
+    .app-download__content {
+      width: 50%;
+      padding: 0 1.5rem;
+
+      @media (max-width: 739px) {
+        width: 100%;
+        padding: 1.5rem;
+      }
+
+      .app-download__title {
+        @include fz-42;
+        font-weight: bold;
+        line-height: calc(58 / 42);
+        margin-bottom: 4.6rem;
+      }
+
+      .app-download__wrap {
+        @include mid-flex();
+        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+        position: relative;
+
+        &::after {
+          content: "";
+          @include mid();
+          width: 1px;
+          height: 24rem;
+          background: url("../assets/images/Line\ 153.png") no-repeat;
+          background-size: 100% 100%;
+
+          @media (max-width: 600px) {
+            content: none;
+          }
+        }
+
+        .heading {
+          @include fz-20;
+          font-weight: bold;
+          text-align: center;
+          line-height: calc(30 / 20);
+          color: #3c3c3c;
+          margin-bottom: 2.85rem;
+        }
+
+        & > .app-download__store {
+          width: 50%;
+          padding: 0 1.5rem;
+
+          @media (max-width: 414px) {
+            width: 100%;
+            padding: 1.5rem;
+          }
+
+          & > .heading {
+            padding-right: 2rem;
+
+            @media (max-width: 414px) {
+              padding-right: 0;
+            }
+          }
+
+          .store__btn {
+            text-align: center;
+            padding-right: 4rem;
+
+            @media (max-width: 414px) {
+              padding-right: 0;
+            }
+
+            & > a {
+              display: inline-block;
+              margin-bottom: 1rem;
+              transition: 0.3s;
+              &:hover {
+                opacity: 0.8;
+              }
+
+              & > img {
+                width: 100%;
+                object-fit: cover;
+                vertical-align: -webkit-baseline-middle;
+              }
+            }
+          }
+        }
+        & > .app-download__qr {
+          width: 50%;
+          padding: 0 1.5rem;
+
+          @media (max-width: 414px) {
+            width: 100%;
+            padding: 1.5rem;
+          }
+
+          & > .heading {
+            margin-bottom: 0;
+          }
+
+          .qr__img {
+            width: 80%;
+            margin: auto;
+            & > img {
+              width: 100%;
+              object-fit: cover;
+              vertical-align: -webkit-baseline-middle;
+            }
+          }
+        }
+      }
+    }
+
+    .app-download__img {
+      width: 50%;
+      padding: 0 1.5rem;
+
+      @media (max-width: 739px) {
+        width: 100%;
+        padding: 1.5rem;
+      }
+
+      & > .img__wrap {
+        @include mid-flex();
+
+        & > .img__item {
+          &:first-child {
+            transform: translateY(10%);
+            @media (max-width: 739px) {
+              transform: translateY(0);
+            }
+          }
+          &:last-child {
+            transform: translateY(-10%);
+            @media (max-width: 739px) {
+              transform: translateY(0);
+            }
+          }
+          & > img {
+            width: 100%;
+            object-fit: cover;
+            vertical-align: -webkit-baseline-middle;
+          }
+        }
+      }
+    }
+  }
+
+  &__cubes {
+    position: absolute;
+    right: -9.3rem;
+    bottom: -9.3rem;
+    width: 48rem;
+    height: 48rem;
+    background: rgba(0, 0, 0, 0.04);
+    transform: rotate(45deg);
+    z-index: -1;
+
+    @media (max-width: 739px) {
+      opacity: 0.5;
+    }
+  }
+}

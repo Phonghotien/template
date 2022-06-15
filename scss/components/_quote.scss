@@ -1,0 +1,68 @@
+.quote {
+    background-image: url('../assets/images/quote.png');
+    background-size: 269px 177px;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    &__big {
+        @include fz-40;
+        letter-spacing: -1px;
+        display: inline-block;
+        margin-top: -1.5rem;
+        padding: 1.5rem 0;
+        font-weight: bold;
+    }
+    &__small {
+        opacity: 0.7;
+        padding: 1.5rem 0;
+    }
+    .upper {
+        text-transform: uppercase;
+    }
+    &__speaker {
+        padding: 1.5rem 0;
+        margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        @include max-media(900px) {
+            padding: 0;
+        }
+        @include max-media(400px) {
+            margin-top: 43rem !important;
+        }
+    }
+    &__ava {
+        width: 60px;
+        height: 60px;
+        border-radius: 9.9rem;
+        margin-right: 1.5rem;
+        img {
+            width: 100%;
+        }
+    }
+    &__info {
+        .name {
+            font-weight: 900;
+            text-transform: uppercase;
+            @include fz-20;
+            line-height: 1.35;
+            margin-bottom: 1rem;
+        }
+        .role {
+            font-size: 1.6rem;
+            line-height: 1.3;
+            color: $c-secondary;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .quote {
+        background: none;
+        text-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.16);
+        &__small {
+            opacity: 1;
+            padding: 0 0 2rem;
+        }
+    }
+}

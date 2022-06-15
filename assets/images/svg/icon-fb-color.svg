@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1909" data-name="Rectangle 1909" width="22" height="22" transform="translate(280 608)" fill="#f98303" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon-fb-color" transform="translate(-280 -608)" clip-path="url(#clip-path)">
+    <g id="facebook-app-symbol" transform="translate(280 608)">
+      <path id="f_1_" d="M12.7,22V11.966h3.367l.505-3.912H12.7v-2.5c0-1.132.313-1.9,1.939-1.9h2.07V.153A28.064,28.064,0,0,0,13.7,0c-2.986,0-5.03,1.823-5.03,5.169V8.054H5.288v3.912H8.665V22Z" fill="#f98303"/>
+    </g>
+  </g>
+</svg>

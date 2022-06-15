@@ -1,0 +1,129 @@
+.career {
+  padding: 45rem 0 24.5rem;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.16);
+  & .section__title-40 {
+    @include fz-40;
+  }
+  &__item {
+    width: 50%;
+
+    position: relative;
+    &.big {
+      width: calc(100% * 7 / 12);
+    }
+    &.small {
+      width: calc(100% * 5 / 12);
+    }
+    .txt {
+      margin-bottom: 3rem;
+    }
+    .button {
+      margin-top: 5rem;
+    }
+  }
+  .dia__grid {
+    position: absolute;
+    left: 0;
+
+    transform: translate(-48%, -45%) rotate(45deg);
+    &.career__top {
+      left: unset;
+      right: 0;
+      transform: translate(83%, -45%) rotate(45deg);
+    }
+    .career__bottom {
+      position: relative;
+      margin-left: 3rem;
+      transform: translateY(145%);
+      z-index: 2;
+    }
+  }
+  .dia__slogan {
+    right: 29rem;
+  }
+  .dia__item {
+    &:hover {
+      @media only screen and(min-width: 901px) {
+        .dia__item__img {
+          transform: rotate(-90deg) scale(1.05);
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .career {
+    padding: 75rem 0 6rem;
+    .intro__container {
+      flex-direction: column;
+    }
+    .section__title-40 {
+      margin-bottom: 3rem;
+    }
+    &__item {
+      padding: 0 1.5rem;
+      text-align: center;
+      &.small {
+        position: relative;
+        z-index: 2;
+        width: 50%;
+      }
+      &.big {
+        width: 50%;
+      }
+      .button {
+        margin: 3rem auto 0;
+      }
+    }
+    .dia__grid.reverse {
+      top: 0;
+      left: 50%;
+      z-index: 1;
+      transform: translate(-50%, -85%) rotate(45deg) scale(0.7);
+    }
+    .txt {
+      opacity: 1;
+      margin-bottom: 2rem;
+    }
+    .dia__grid.career__top {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .career {
+    padding: 75rem 0 5rem;
+    .section__title-40 {
+      margin-bottom: 2rem;
+    }
+    .intro__container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .button {
+      margin: 0 auto;
+    }
+    &__item {
+      &.small {
+        text-align: center;
+
+        width: 100%;
+        max-width: 500px;
+      }
+      &.big {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .career {
+    padding: 57rem 0 5rem;
+    .dia__grid.reverse {
+      transform: translate(-50%, -75%) rotate(45deg) scale(0.5);
+    }
+  }
+}
